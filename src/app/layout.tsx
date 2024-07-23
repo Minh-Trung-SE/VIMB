@@ -1,4 +1,4 @@
-import type {Metadata} from "next";
+import type {GetServerSideProps, Metadata} from "next";
 import {Inter} from "next/font/google";
 import "@src/app/globals.css";
 import {Toaster, toast} from 'sonner';
@@ -6,17 +6,19 @@ import {Toaster, toast} from 'sonner';
 const inter = Inter({subsets: ["latin"]});
 
 export const metadata: Metadata = {
-    title: "Web Design",
-    description: "Web Design",
-    keywords: ["web design", "web development", "website design", "web design company", "web design services", "web design agency", "web design and development", "web design studio", "web design tools", "web design trends", "web design inspiration", "web design portfolio", "web design examples", "web design tutorial", "web design course", "web design software", "web design templates", "web design ideas", "web design principles"],
+    title: "VIMB",
+    description: "VIMB Việt Nam",
+    keywords: ["Đầu tư quốc tịch", "Quốc tịch", "Mua quốc tịch"],
     icons: "/logo/logo.png",
     openGraph: {
-        title: "Web Design",
-        description: "Web design is the process of creating websites. It encompasses several different aspects, including webpage layout, content production, and graphic design.",
+        title: "VIMB",
+        description: "Đầu tư quốc tịch",
         url: "https://webdesign.com",
         type: "website"
     }
 }
+
+
 
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode; }>) {
     return (

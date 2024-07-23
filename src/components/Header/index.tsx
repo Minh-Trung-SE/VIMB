@@ -46,7 +46,7 @@ const Header: FC<HTMLAttributes<HTMLHeadElement>> = ({className, ...props}) => {
                     <nav className="h-full flex items-center font-medium">
                         <Link
                             href="/"
-                            data-link-active={pathname.startsWith("/")}
+                            data-link-active={pathname === "/"}
                             className="h-full relative border-b-3 border-transparent flex items-center data-link-active:border-gray-500 hover:border-gray-500 transition-colors duration-300 px-5"
                         >
                             Home

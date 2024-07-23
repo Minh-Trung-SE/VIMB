@@ -14,10 +14,9 @@ const Banner = () => {
                     maxHeight: 532
                 }
             }
+            className="relative -z-40"
         >
-            <Container>
-
-            </Container>
+            <h1 className="absolute top-1/4 w-full text-white text-center text-4xl font-medium">About VIMB.vn</h1>
         </div>
     );
 };

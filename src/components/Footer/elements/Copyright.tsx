@@ -4,10 +4,10 @@ import {twMerge} from "tailwind-merge";
 const Copyright: FC<HTMLAttributes<HTMLDivElement>> = ({className, ...props}) => {
     return (
         <div
-            className={twMerge("border-t py-2", className)}
+            className={twMerge("border-t border-gray-500 py-2", className)}
             {...props}
         >
-            <p className="text-center text-sm font-medium text-gray-500">© Copyright Web Design 2024. All Rights Reserved.</p>
+            <p className="text-center text-sm font-medium text-white opacity-80">©2024 Vanuatu Passport, Vanuatu Citizenship by Investment - Vanuatu Investment Marketing Bureau. All Rights Reserved.</p>
         </div>
     );
 };

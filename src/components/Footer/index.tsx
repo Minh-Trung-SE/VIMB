@@ -6,13 +6,9 @@ import React from 'react';
 const Footer = () => {
     return (
         <footer
-            style={
-                {
-                    backgroundImage: "url('/background/footer.svg')",
-                }
-            }
+            className="bg-primary"
         >
-            <Main/>
+            <Main className="text-white"/>
             <Copyright/>
         </footer>
     );
