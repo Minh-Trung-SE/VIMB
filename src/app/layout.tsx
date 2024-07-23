@@ -16,7 +16,7 @@ export const metadata: Metadata = {
         description: "",
         url: "https://vimb.vn",
         type: "website",
-        images: "/images/vanuatu-passport.webp"
+        images: "https://vimb.vn/images/vanuatu-passport.webp"
     }
 }
 

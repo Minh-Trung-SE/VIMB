@@ -18,7 +18,7 @@ export async function generateMetadata({searchParams}: NextProps<undefined, Lang
             description: "",
             url: "https://vimb.vn",
             type: "website",
-            images: "/images/vanuatu-passport.webp",
+            images: "https://vimb.vn/images/vanuatu-passport.webp",
         }
     } : {
         title: "VIMB Việt Nam, đầu tư và sở hữu quốc tịch Vanuatu",
@@ -30,7 +30,7 @@ export async function generateMetadata({searchParams}: NextProps<undefined, Lang
             description: "",
             url: "https://vimb.vn",
             type: "website",
-            images: "/images/vanuatu-passport.webp",
+            images: "https://vimb.vn/images/vanuatu-passport.webp",
         }
     }
 
