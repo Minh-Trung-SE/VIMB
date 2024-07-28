@@ -5,7 +5,7 @@ const Container:FC<HTMLAttributes<HTMLDivElement> & PropsWithChildren> = ({class
     return (
         <div
             {...props}
-            className={twMerge("px-5 lg:px-40", className)}
+            className={twMerge("px-5 xl:px-40", className)}
         >
             {children}
         </div>

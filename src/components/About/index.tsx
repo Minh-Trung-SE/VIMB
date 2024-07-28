@@ -6,6 +6,7 @@ import Information from "@src/components/About/elements/Information";
 import ActsAs from "@src/components/About/elements/ActsAs";
 
 const About = () => {
+
     return (
         <Container className="py-10 space-y-10">
             <Introduce/>

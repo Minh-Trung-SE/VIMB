@@ -1,27 +1,36 @@
 import { NextResponse } from 'next/server'
 import type { NextRequest } from 'next/server'
+import {isUndefined} from "lodash";
 
 export function middleware(request: NextRequest) {
     const {url, nextUrl: {pathname}} = request
+    const languagePath = pathname.split("/", 2).at(-1)
+    const isLanguagePath = isUndefined(languagePath) ? false :  ["vi", "en"].includes(languagePath)
+    const language = isLanguagePath ? languagePath! : request.cookies.get("language")?.value ?? "vi"
 
-    if (pathname.startsWith('/en')) {
-        const rewrite = request.nextUrl.clone();
-        rewrite.pathname = pathname.replace("/en", "")
-        rewrite.searchParams.set("language", "en");
-        return NextResponse.rewrite(rewrite)
+    const response = NextResponse.next(
+        {
+            headers: {
+                "language": language
+            }
+        }
+    )
+
+    if (isUndefined(request.cookies.get(language))){
+        response.cookies.set(
+            "language",
+            "vi",
+            {
+                path: "/"
+            }
+        )
     }
 
-    if (pathname.startsWith('/vi')) {
+    if (isLanguagePath) {
         const rewrite = request.nextUrl.clone();
-        rewrite.pathname = pathname.replace("/vi", "")
-        rewrite.searchParams.set("language", "vi");
-        return NextResponse.rewrite(rewrite)
+        rewrite.pathname = pathname.replace(`/${language}`, "")
+        return NextResponse.rewrite(rewrite, response)
     }
 
-    request.nextUrl.searchParams.set("language", "vi");
-    return NextResponse.next()
-}
-
-export const config = {
-    matcher: ['/vi/:path*', '/en/:path*'],
+    return response
 }

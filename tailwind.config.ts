@@ -7,7 +7,7 @@ const config: Config = {
     theme: {
         extend: {
             width: {
-              "150px": "9.375rem"
+                "150px": "9.375rem"
             },
             borderWidth: {
                 "2.5": "2.5px",
@@ -24,6 +24,10 @@ const config: Config = {
                 "rose-white": "#fef7f4",
                 "catskill-white": "#f1f5f9",
                 "pale-sky": "#64748B",
+                vn: {
+                    red: "#da251d",
+                    yellow: "#ffff00"
+                },
                 gemini: {
                     default: {
                         100: "#1fb6ff",

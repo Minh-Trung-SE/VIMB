@@ -15,7 +15,7 @@ const Logo: FC<LogoProps> = ({href = "/", className, ...props}) => {
             className={twMerge("hover:opacity-90 transition-opacity", className)}
         >
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="h-11 w-auto" src="/logo/logo-full.png" alt="logo"/>
+            <img className="h-11 w-auto" src="/logo/logo.png" alt="logo"/>
         </Link>
     );
 };

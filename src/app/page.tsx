@@ -1,10 +1,9 @@
 import About from "@src/components/About";
 import Banner from "@src/components/Banner";
-import Footer from "@src/components/Footer";
-import Header from "@src/components/Header";
-import {ReadonlyURLSearchParams} from "next/navigation";
 import {Metadata, NextPage} from "next";
-import {LanguageParams, NextProps, ServerComponentProps} from "@src/types";
+import {LanguageParams, NextProps} from "@src/types";
+
+import getServerLanguage from "@src/ultils/getServerLanguage";
 
 export async function generateMetadata({searchParams}: NextProps<undefined, LanguageParams>) : Promise<Metadata> {
 
@@ -36,19 +35,17 @@ export async function generateMetadata({searchParams}: NextProps<undefined, Lang
 
 }
 
-const Page: NextPage<ServerComponentProps> = (props) => {
+const Page: NextPage<NextProps<unknown, LanguageParams>> = ({searchParams}) => {
 
     return (
-        <main>
-            <Header/>
+        <>
             <section id="home">
                 <Banner/>
             </section>
             <section id="about">
                 <About/>
             </section>
-            <Footer/>
-        </main>
+        </>
     );
 }
 

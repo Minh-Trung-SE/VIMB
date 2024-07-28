@@ -1,6 +1,8 @@
 import React from 'react';
+import getServerLanguage from "@src/ultils/getServerLanguage";
 
 const Introduce = () => {
+    const language = getServerLanguage()
     return (
         <>
             <div className="flex">
@@ -17,11 +19,20 @@ const Introduce = () => {
                         alt="VIMB-Vanuatu-Citizenship"
                     />
                     <div className="grow p-5 text-lg bg-primary">
-                        <p className="text-white">
-                            VIMB has since 2017 been one of Vanuatu’s most prominent internationally operating
-                            professional services companies. Headquartered in Vanuatu, VIMB operates in Port Vila,
-                            Singapore, Dubai, London and now Vietnam.
-                        </p>
+                        {
+                         language === "en" ? (
+                             <p className="text-white">
+                                 VIMB has since 2017 been one of Vanuatu’s most prominent internationally operating
+                                 professional services companies. Headquartered in Vanuatu, VIMB operates in Port Vila,
+                                 Singapore, Dubai, London and now Vietnam.
+                             </p>
+                         ) : (
+                             <p className="text-white">
+                                 VIMB kể từ năm 2017 đã là một trong những công ty dịch vụ chuyên nghiệp hoạt động quốc tế nổi bật nhất của Vanuatu. Có trụ sở chính tại Vanuatu, VIMB hoạt động tại Port Vila, Singapore, Dubai, London và bây giờ là Việt Nam.
+                             </p>
+                         )
+
+                        }
                         <br/>
                         <p className="text-white">
                             The Vanuatu Citizenship Office has designated VIMB as their agent for Vanuatu’s Citizenship
