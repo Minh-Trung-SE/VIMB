@@ -4,6 +4,7 @@ import "@src/app/globals.css";
 import {Toaster} from 'sonner';
 import {ReactNode} from "react";
 import Header from "@src/components/Header";
+import Footer from "@src/components/Footer";
 
 
 const inter = Inter({subsets: ["latin"]});
@@ -35,8 +36,8 @@ export default function RootLayout(
         <body className={inter.className}>
         <main>
             <Header />
-        {children}
-
+                {children}
+            <Footer/>
         </main>
         <Toaster/>
         </body>

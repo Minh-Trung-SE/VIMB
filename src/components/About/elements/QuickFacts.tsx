@@ -5,8 +5,7 @@ const QuickFacts = () => {
     return (
         <div className="space-y-10">
             <h2 className="font-medium text-2xl">Vanuatu Quick Facts</h2>
-            <ul className="grid grid-cols-3 gap-5">
-
+            <ul className="grid grid-cols-1 sm:grid-cols-3 gap-5">
                 <li className="flex items-center space-x-3 border rounded p-2">
                     <svg className="size-10" data-name="Layer 1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path

@@ -2,11 +2,11 @@
 import React, {FC} from 'react';
 import Container from "@src/components/Container";
 import getClientCookieLanguage from "@src/ultils/getClientCookieLanguage";
-import {Root, Trigger, Content, Item} from '@radix-ui/react-dropdown-menu';
+import {Root, Trigger, Content, Close} from '@radix-ui/react-popover';
 
-const TopHeader: FC = (props) => {
+const TopHeader: FC = () => {
     const language = getClientCookieLanguage();
-    console.log(language)
+
     return (
         <Container className="bg-primary flex justify-between items-center">
             <h2 className="py-2.5 text-sm leading-3.5 font-medium text-white">Government Designated Agent</h2>
@@ -39,6 +39,7 @@ const TopHeader: FC = (props) => {
                     </button>
 
                 </Trigger>
+
                 <Content
                     side="bottom"
                     align="end"
@@ -50,14 +51,19 @@ const TopHeader: FC = (props) => {
                     }
                     }
                 >
-                    <Item data-link-active={language === "vi"} className="outline-none cursor-pointer px-2 data-link-active:text-white data-link-active:bg-primary">
+                    <Close
+                        data-link-active={language === "vi"}
+                        className="text-left block w-full outline-none cursor-pointer px-2 data-link-active:text-white data-link-active:bg-primary"
+                    >
                          Tiếng Việt
-                    </Item>
-                    <Item data-link-active={language === "en"} className="outline-none cursor-pointer px-2 data-link-active:text-white data-link-active:bg-primary">
+                    </Close>
+                    <Close
+                        data-link-active={language === "en"}
+                        className="text-left block w-full outline-none cursor-pointer px-2 data-link-active:text-white data-link-active:bg-primary"
+                    >
                         English
-                    </Item>
+                    </Close>
                 </Content>
-
             </Root>
         </Container>
     );

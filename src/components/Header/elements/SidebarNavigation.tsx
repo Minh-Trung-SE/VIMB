@@ -5,6 +5,7 @@ import Logo from "@src/components/Header/elements/Logo";
 import {usePathname} from "next/navigation";
 import useBoolean from "@src/hooks/useBoolean";
 import Link from "next/link";
+import LogoSquare from "@src/components/Header/elements/LogoSquare";
 
 const SidebarNavigation = () => {
     const [flag, setFlag] = useBoolean(false)
@@ -13,9 +14,7 @@ const SidebarNavigation = () => {
     return (
         <Container className="py-2.5">
             <div className="h-11 flex justify-between items-center text-cetacean-blue">
-                <Logo/>
-                <div className="h-full flex items-center space-x-5">
-                    <button className="bg-vn-red text-white rounded px-4 py-2">Contact US</button>
+                <div className="h-full flex items-center gap-x-5">
                     <button
                         onClick={setFlag.on}
                     >
@@ -28,7 +27,11 @@ const SidebarNavigation = () => {
                             />
                         </svg>
                     </button>
+                    <LogoSquare className="h-16 sm:hidden"/>
+                    <Logo className="hidden sm:block"/>
                 </div>
+                <button className="bg-vn-red text-white rounded px-4 py-2">Contact US</button>
+
 
                 {
                     flag ? (

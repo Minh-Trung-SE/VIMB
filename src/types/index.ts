@@ -1,5 +1,8 @@
+import LANGUAGES, {Language} from "@src/constants/Language";
+import language from "@src/constants/Language";
+
 export type LanguageParams = {
-    language: "en" | "vi"
+    language:  Language
 }
 
 export type NextProps<P = Record<string, string>, S = Record<string, string>> = {

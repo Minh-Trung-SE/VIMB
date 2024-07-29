@@ -1,6 +1,7 @@
 import Link, {LinkProps} from "next/link";
 import React, {FC} from 'react';
 import {twMerge} from "tailwind-merge";
+import Image from "next/image";
 
 type LogoProps = Omit<LinkProps, "href"> & {
     href?: URL
@@ -14,8 +15,14 @@ const Logo: FC<LogoProps> = ({href = "/", className, ...props}) => {
             {...props}
             className={twMerge("hover:opacity-90 transition-opacity", className)}
         >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="h-11 w-auto" src="/logo/logo.png" alt="logo"/>
+            <Image
+                sizes="100vw"
+                width={0}
+                height={0}
+                className="h-full w-auto"
+                src="/logo/logo.png"
+                alt="logo"
+            />
         </Link>
     );
 };

@@ -1,8 +1,12 @@
+import getServerLanguage from "@src/ultils/getServerLanguage";
+
 const ActsAs = () => {
+    const language = getServerLanguage()
+
     return (
         <div className="py-10 space-y-10">
             <h2 className="font-medium text-center text-2xl">VIMB acts as</h2>
-            <div className="grid grid-cols-4 gap-5">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                 <div className="space-y-5">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg

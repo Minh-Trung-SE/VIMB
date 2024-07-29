@@ -16,7 +16,7 @@ const Banner = () => {
             }
             className="relative -z-40"
         >
-            <h1 className="absolute top-1/4 w-full text-white text-center text-4xl font-medium">About VIMB.vn</h1>
+            <h1 className="absolute top-1/4 w-full text-white text-center text-4xl font-medium">About VIMB.VN</h1>
         </div>
     );
 };
