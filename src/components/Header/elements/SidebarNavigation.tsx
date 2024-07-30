@@ -63,12 +63,14 @@ const SidebarNavigation = () => {
                         <div className="grow">
                             <Link
                                 href="/"
+                                onClick={setFlag.off}
                                 data-link-active={pathname === "/"}
                                 className="border-t border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
                             >
                                 About VIMB
                             </Link>
                             <Link
+                                onClick={setFlag.off}
                                 href="/passport-strength"
                                 data-link-active={pathname.startsWith("/passport-strength")}
                                 className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
@@ -76,6 +78,7 @@ const SidebarNavigation = () => {
                                 Passport Strength
                             </Link>
                             <Link
+                                onClick={setFlag.off}
                                 href="/cost-2nd"
                                 data-link-active={pathname.startsWith("/cost-2nd")}
                                 className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
@@ -83,6 +86,7 @@ const SidebarNavigation = () => {
                                 The Cost of 2nd Passport
                             </Link>
                             <Link
+                                onClick={setFlag.off}
                                 href="/citizenship"
                                 data-link-active={pathname.startsWith("/citizenship")}
                                 className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
@@ -90,6 +94,7 @@ const SidebarNavigation = () => {
                                 Citizenship By Investment (CBI)
                             </Link>
                             <Link
+                                onClick={setFlag.off}
                                 href="/"
                                 data-link-active={pathname.startsWith("/contact")}
                                 className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
