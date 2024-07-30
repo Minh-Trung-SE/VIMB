@@ -31,46 +31,80 @@ const SidebarNavigation = () => {
                     <Logo className="hidden sm:block"/>
                 </div>
                 <button className="bg-vn-red text-white rounded px-4 py-2">Contact US</button>
+            </div>
+            {
+                flag ? (
+                    <div
+                        onClick={setFlag.off}
+                        className="fixed inset-0 bg-black/40">
+                    </div>
+                ) : null
+            }
+            {
+                flag ? (
 
 
-                {
-                    flag ? (
-                        <nav
-                            className="fixed bg-white top-0 right-0 bottom-0 h-full font-medium"
-                        >
+                    <nav
+                        className="flex flex-col max-w-96 w-screen fixed bg-white top-0 left-0 bottom-0 h-full font-medium"
+                    >
+                        <div className="flex items-center justify-between px-5 py-2 mb-3">
+                            <Logo/>
+                            <button
+                                onClick={setFlag.off}
+                                className="transition-all hover:text-vn-red"
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                     strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18 18 6M6 6l12 12"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div className="grow">
                             <Link
                                 href="/"
                                 data-link-active={pathname === "/"}
-                                className="flex items-center data-link-active:border-gray-500 hover:border-gray-500 transition-colors duration-300 px-5"
+                                className="border-t border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
                             >
-                                Home
+                                About VIMB
                             </Link>
                             <Link
                                 href="/passport-strength"
                                 data-link-active={pathname.startsWith("/passport-strength")}
-                                className="flex items-center data-link-active:border-gray-500 hover:border-gray-500 transition-colors duration-300 px-5"
+                                className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
                             >
                                 Passport Strength
                             </Link>
                             <Link
                                 href="/cost-2nd"
                                 data-link-active={pathname.startsWith("/cost-2nd")}
-                                className="flex items-center data-link-active:border-gray-500 hover:border-gray-500 transition-colors duration-300 px-5"
+                                className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
                             >
                                 The Cost of 2nd Passport
                             </Link>
                             <Link
                                 href="/citizenship"
                                 data-link-active={pathname.startsWith("/citizenship")}
-                                className="flex items-center data-link-active:border-gray-500 hover:border-gray-500 transition-colors duration-300 px-5"
+                                className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
                             >
                                 Citizenship By Investment (CBI)
                             </Link>
-                        </nav>
-                    ) : null
-                }
+                            <Link
+                                href="/"
+                                data-link-active={pathname.startsWith("/contact")}
+                                className="border-b px-5 py-2 flex items-center text-primary/80 data-link-active:text-primary hover:bg-slate-400 hover:border-gray-500 transition-colors duration-300"
+                            >
+                                Contact US
+                            </Link>
 
-            </div>
+                        </div>
+                        <div className="bg-primary p-2">
+                            <p className="text-center text-sm font-medium text-white opacity-80">©2024 VIMB Viet Nam.
+                                All Rights Reserved.</p>
+                        </div>
+                    </nav>
+                ) : null
+            }
         </Container>
     )
 };
