@@ -1,6 +1,9 @@
 import React from 'react';
+import getServerLanguage from "@src/ultils/getServerLanguage";
+import displayMessage from "@src/ultils/language";
 
 const QuickFacts = () => {
+    const language = getServerLanguage()
 
     return (
         <div className="space-y-10">
@@ -14,8 +17,28 @@ const QuickFacts = () => {
                         />
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Happiest</p>
-                        <p className='text-sm'>2nd Happiest People Index Rank</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Hạnh phúc",
+                                        en: "Happiest"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Chỉ số xếp hạng hạnh phúc thứ 2",
+                                        en: "2nd Happiest People Index Rank"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -26,15 +49,55 @@ const QuickFacts = () => {
                         />
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Islands</p>
-                        <p className='text-sm'>Spanning 1,300km and 12,000km²</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Quốc đảo",
+                                        en: "Islands"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Trải dài 1.300km và 12.000km²",
+                                        en: "Spanning 1,300km and 12,000km²"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
 
                     <div className="grow">
-                        <p className="font-medium text-lg">Vanuatu</p>
-                        <p className='text-sm'>83 Islands (65 are populated)</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Vanuatu",
+                                        en: "Vanuatu"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "83 hòn đảo (65 có dân cư)",
+                                        en: "83 Islands (65 are populated)"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -45,8 +108,28 @@ const QuickFacts = () => {
                             fill="#6563ff"/>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Australia</p>
-                        <p className='text-sm'>2.5 hour flight from Australia</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Úc",
+                                        en: "Australia"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Chuyến bay 2,5 giờ từ Úc",
+                                        en: "2.5 hour flight from Australia"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -57,8 +140,28 @@ const QuickFacts = () => {
                               fillRule="evenodd"/>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">New Zealand</p>
-                        <p className='text-sm'>3.5 hour flight from New Zealand</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "New Zealand",
+                                        en: "New Zealand"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Chuyến bay 3,5 giờ từ New Zealand",
+                                        en: "3.5 hour flight from New Zealand"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
 
@@ -100,8 +203,28 @@ const QuickFacts = () => {
                         </g>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Citizenship</p>
-                        <p className='text-sm'>Citizenship is hereditary</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Công dân",
+                                        en: "Citizenship"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Kế thừa quốc tịch và quyền công dân",
+                                        en: "Citizenship is hereditary"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -208,8 +331,29 @@ const QuickFacts = () => {
                         <g id="ax"/>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Volcanic soil</p>
-                        <p className='text-sm'>Means organic produce are highly nutritious</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Đất núi lửa",
+                                        en: "Volcanic soil"
+                                    },
+                                    language
+                                )
+                            }
+
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Đất núi lửa có nghĩa là sản phẩm hữu cơ có giá trị dinh dưỡng cao",
+                                        en: "Means organic produce are highly nutritious"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -303,8 +447,28 @@ const QuickFacts = () => {
                         </g>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Beef</p>
-                        <p className='text-sm'>Grass fed beef are high quality exports</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thịt bò",
+                                        en: "Beef"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thịt bò ăn cỏ là sản phẩm xuất khẩu chất lượng cao",
+                                        en: "Grass fed beef are high quality exports"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -385,8 +549,28 @@ const QuickFacts = () => {
                         </g>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Seafood</p>
-                        <p className='text-sm'>Seafood is abundant from pristine waters</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Hải sản",
+                                        en: "Seafood"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Hải sản dồi dào từ vùng biển hoang sơ",
+                                        en: "Seafood is abundant from pristine waters"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -545,8 +729,28 @@ const QuickFacts = () => {
                         </g>
                     </svg>
                     <div className="grow">
-                        <p className="font-medium text-lg">Agriculture</p>
-                        <p className='text-sm'>Agriculture is the main source of production</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Nông sản",
+                                        en: "Agriculture"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Nông nghiệp sử dụng 65-80% dân số",
+                                        en: "Agriculture is the main source of production"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
                 <li className="flex items-center space-x-3 border rounded p-2">
@@ -566,8 +770,28 @@ const QuickFacts = () => {
                     </svg>
 
                     <div className="grow">
-                        <p className="font-medium text-lg">Tourism</p>
-                        <p className='text-sm'>Tourism makes up 40% of GDP</p>
+                        <p className="font-medium text-lg">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Du lịch",
+                                        en: "Tourism"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p className='text-sm'>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Du lịch chiếm 40% GDP",
+                                        en: "Tourism makes up 40% of GDP"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
                     </div>
                 </li>
 

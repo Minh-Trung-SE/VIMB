@@ -1,4 +1,5 @@
 import getServerLanguage from "@src/ultils/getServerLanguage";
+import displayMessage from "@src/ultils/language";
 
 const ActsAs = () => {
     const language = getServerLanguage()
@@ -21,8 +22,16 @@ const ActsAs = () => {
 
                     </div>
                     <p className="text-center text-xs">
-                        An administrative resource for supporting the Vanuatu Citizenship and Vanuatu Permanent
-                        Residency application processes
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Tài liệu hành chính hỗ trợ quy trình xin quốc tịch và thường trú nhân Vanuatu",
+                                    en: "An administrative resource for supporting the Vanuatu Citizenship and Vanuatu Permanent Residency application processes"
+                                },
+                                language
+                            )
+                        }
+
                     </p>
                 </div>
                 <div className="space-y-5">
@@ -36,7 +45,16 @@ const ActsAs = () => {
 
                     </div>
                     <p className="text-center text-xs">
-                        A resource for exploring investment opportunities in Vanuatu, and bi-lateral trade
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Tài liệu tham khảo về các cơ hội đầu tư và thương mại song phương tại Vanuatu",
+                                    en: "A resource for exploring investment opportunities in Vanuatu, and bi-lateral trade"
+                                },
+                                language
+                            )
+                        }
+
                     </p>
                 </div>
                 <div className="space-y-5">
@@ -50,7 +68,16 @@ const ActsAs = () => {
 
                     </div>
                     <p className="text-center text-xs">
-                        An information resource for tourism, property investment and travel related enquiries
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Nguồn thông tin cho các vấn đề liên quan đến du lịch, đầu tư bất động sản và lữ hành",
+                                    en: "An information resource for tourism, property investment and travel related enquiries"
+                                },
+                                language
+                            )
+                        }
+
                     </p>
                 </div>
                 <div className="space-y-5">
@@ -72,7 +99,15 @@ const ActsAs = () => {
 
                     </div>
                     <p className="text-center text-xs">
-                        A link to provide seamless communication between Vanuatu and global key geographical centers
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Kênh liên lạc thông suốt giữa Vanuatu và các trung tâm địa lý quan trọng trên toàn cầu",
+                                    en: "A link to provide seamless communication between Vanuatu and global key geographical centers"
+                                },
+                                language
+                            )
+                        }
                     </p>
                 </div>
 
