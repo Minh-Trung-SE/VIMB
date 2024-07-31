@@ -8,8 +8,8 @@ import getServerLanguage from "@src/ultils/getServerLanguage";
 export async function generateMetadata({searchParams}: NextProps<undefined, LanguageParams>) : Promise<Metadata> {
 
     return searchParams.language === "en" ? {
-        title: "VIMB Vietnam, facilitating Vanuatu citizenship acquisition",
-        description: "VIMB Vietnam",
+        title: "Facilitating Vanuatu citizenship acquisition | VIMB Vietnam",
+        description: "Facilitating Vanuatu citizenship acquisition",
         keywords: ["Citizenship investment", "Citizenship", "Buy citizenship"],
         icons: "/logo/logo.png",
         openGraph: {
@@ -20,8 +20,8 @@ export async function generateMetadata({searchParams}: NextProps<undefined, Lang
             images: "https://vimb.vn/images/vanuatu-passport.webp",
         }
     } : {
-        title: "VIMB Việt Nam, đầu tư và sở hữu quốc tịch Vanuatu",
-        description: "VIMB Việt Nam",
+        title: "Đầu tư và sở hữu quốc tịch Vanuatu | VIMB Việt Nam",
+        description: "Đầu tư và sở hữu quốc tịch Vanuatu",
         keywords: ["Đầu tư quốc tịch", "Quốc tịch", "Mua quốc tịch"],
         icons: "/logo/logo.png",
         openGraph: {
