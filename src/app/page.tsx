@@ -4,10 +4,11 @@ import {Metadata, NextPage} from "next";
 import {LanguageParams, NextProps} from "@src/types";
 
 import getServerLanguage from "@src/ultils/getServerLanguage";
+import LANGUAGES from "@src/constants/Language";
 
 export async function generateMetadata({searchParams}: NextProps<undefined, LanguageParams>) : Promise<Metadata> {
-
-    return searchParams.language === "en" ? {
+    const language =  getServerLanguage();
+    return searchParams.language === LANGUAGES.EN || language === LANGUAGES.EN ? {
         title: "Facilitating Vanuatu citizenship acquisition | VIMB Vietnam",
         description: "Facilitating Vanuatu citizenship acquisition",
         keywords: ["Citizenship investment", "Citizenship", "Buy citizenship"],

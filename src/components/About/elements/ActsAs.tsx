@@ -6,7 +6,7 @@ const ActsAs = () => {
 
     return (
         <div className="py-10 space-y-10">
-            <h2 className="font-medium text-center text-2xl">VIMB acts as</h2>
+            <h2 className="font-medium text-center text-3xl">VIMB Viet Nam acts as</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
                 <div className="space-y-5">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
@@ -21,7 +21,7 @@ const ActsAs = () => {
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
+                    <p className="text-center text-sm">
                         {
                             displayMessage(
                                 {
@@ -44,7 +44,7 @@ const ActsAs = () => {
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
+                    <p className="text-center text-sm">
                         {
                             displayMessage(
                                 {
@@ -67,7 +67,7 @@ const ActsAs = () => {
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
+                    <p className="text-center text-sm">
                         {
                             displayMessage(
                                 {
@@ -98,7 +98,7 @@ const ActsAs = () => {
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
+                    <p className="text-center text-sm">
                         {
                             displayMessage(
                                 {

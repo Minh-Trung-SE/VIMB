@@ -1,33 +1,127 @@
-import Container from "@src/components/Container";
+import getServerLanguage from "@src/ultils/getServerLanguage";
+import displayMessage from "@src/ultils/language";
 
 const GlobalCBI = () => {
+    const language = getServerLanguage()
     return (
         <div className="py-10">
             <h1 className="px-5 py-2 font-medium text-2xl bg-primary text-white">Global CBI glance</h1>
             <div>
                 <br/>
-                <p>To obtain another passport as of 2024, there are many Citizenship By Investment (CBI) programs
-                    available. As with all CBI programs, only government authorised agents can process applications. Do
-                    not risk “cheaper” intermediaries who will add subsequent fees to their quoted prices. </p>
+                {
+                    displayMessage(
+                        {
+                            vi: (
+                                <p>
+                                    Để có được hộ chiếu khác kể từ năm 2024, có rất nhiều chương trình Nhập tịch theo
+                                    diện đầu tư (CBI).
+                                    <b><i>Như với tất cả các chương trình CBI, chỉ những đại lý được chính phủ ủy quyền
+                                        mới có thể xử lý đơn đăng ký.</i></b>
+                                    Đừng mạo hiểm với những người trung gian “rẻ hơn”, những người sẽ cộng thêm các
+                                    khoản phí tiếp theo vào giá niêm yết của họ.
+                                </p>
+                            ),
+                            en: (
+                                <p>
+                                    To obtain another passport as of 2024, there are many Citizenship By Investment
+                                    (CBI) programs available.
+                                    <b><i>As with all CBI programs, only government authorised agents can process
+                                        applications.</i></b>
+                                    Do not risk “cheaper” intermediaries who will add subsequent fees to their quoted
+                                    prices.
+                                </p>
+                            )
+                        },
+                        language
+                    )
+                }
                 <br/>
-                <p>The minimum amount currently required for a non-refundable investment, without agent service fees,
-                    are approximately:
+                <p>
+                    {
+                        displayMessage(
+                            {
+                                vi: "Số tiền tối thiểu hiện được yêu cầu cho khoản đầu tư không hoàn lại, không tính phí dịch vụ đại lý, là khoảng:",
+                                en: "The minimum amount currently required for a non-refundable investment, without agent service fees, are approximately:"
+                            },
+                            language
+                        )
+                    }
                 </p>
 
                 <br/>
                 <table className="w-full border border-collapse">
                     <thead className="bg-slate-500 text-white text-left ">
                     <tr className="border">
-                        <th className="p-2 border">Time</th>
-                        <th className="p-2 border">Official CBI Cost</th>
-                        <th className="p-2 border">Time until citizenship granted</th>
+                        <th className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Country",
+                                        vi: "Quôc gia"
+                                    },
+                                    language
+                                )
+                            }
+                        </th>
+                        <th className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Official CBI Cost",
+                                        vi: "Giá niêm yết từ CBI"
+                                    },
+                                    language
+                                )
+                            }
+                        </th>
+                        <th className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Time until citizenship granted",
+                                        vi: "Thời gian cho đến khi được cấp quyền công dân"
+                                    },
+                                    language
+                                )
+                            }
+                        </th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr className="border">
-                        <td className="p-2 border">USA</td>
-                        <td className="p-2 border">$1 million USD</td>
-                        <td className="p-2 border">3 years</td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "USA",
+                                        vi: "Hoa kỳ"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "1 million $",
+                                        vi: "1 triệu đô"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "3 years",
+                                        vi: "3 năm"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
                     </tr>
 
                     <tr className="border">

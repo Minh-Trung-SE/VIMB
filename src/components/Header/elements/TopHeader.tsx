@@ -21,6 +21,8 @@ const TopHeader: FC = () => {
             }
         )
         if (data?.reload) {
+            const href = `${window.location.pathname}${window.location.search}`.replace(/^\/(?:en|vi)/, `/${language}`)
+            router.replace(href)
             router.refresh()
         }
     }, [router])
