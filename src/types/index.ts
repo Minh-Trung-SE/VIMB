@@ -1,5 +1,4 @@
 import LANGUAGES, {Language} from "@src/constants/Language";
-import language from "@src/constants/Language";
 
 export type LanguageParams = {
     language:  Language
