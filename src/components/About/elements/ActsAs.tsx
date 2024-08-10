@@ -8,7 +8,7 @@ const ActsAs = () => {
         <div className="py-10 space-y-10">
             <h2 className="font-medium text-center text-3xl">VIMB Viet Nam acts as</h2>
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
-                <div className="space-y-5">
+                <div className="space-y-5 border border-primary p-5 rounded shadow">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg
                             className="h-full w-full"
@@ -34,7 +34,7 @@ const ActsAs = () => {
 
                     </p>
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-5 border border-primary p-5 rounded shadow">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg className='w-full h-full' viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -54,10 +54,9 @@ const ActsAs = () => {
                                 language
                             )
                         }
-
                     </p>
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-5 border border-primary p-5 rounded shadow">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg className="w-full h-full" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -80,7 +79,7 @@ const ActsAs = () => {
 
                     </p>
                 </div>
-                <div className="space-y-5">
+                <div className="space-y-5 border border-primary p-5 rounded shadow">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg
                             enableBackground="new 0 0 128 128"

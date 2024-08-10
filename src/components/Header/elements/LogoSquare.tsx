@@ -19,6 +19,7 @@ const Logo: FC<LogoProps> = ({href = "/", className, ...props}) => {
                 sizes="100vw"
                 width={0}
                 height={0}
+                loading="eager"
                 className="h-full w-auto"
                 src="/logo/logo.png"
                 alt="logo"

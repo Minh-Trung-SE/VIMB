@@ -1,13 +1,8 @@
 import path from "path";
-import fs from 'fs';
 import { Sequelize } from "sequelize"
 
-export const DATABASE_PATH = path.resolve(process.cwd(), ".next", 'database.sqlite')
+export const DATABASE_PATH = path.resolve(process.cwd(), 'database.sqlite')
 
-if (!fs.existsSync(DATABASE_PATH)) {
-    fs.writeFileSync(DATABASE_PATH, '')
-}
-fs.chmodSync(DATABASE_PATH, 777);
 const sequelize = new Sequelize(
     {
         dialect: "sqlite",
