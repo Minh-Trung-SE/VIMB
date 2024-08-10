@@ -7,7 +7,7 @@ export const DATABASE_PATH = path.resolve(process.cwd(), ".next", 'database.sqli
 if (!fs.existsSync(DATABASE_PATH)) {
     fs.writeFileSync(DATABASE_PATH, '')
 }
-fs.chmodSync(DATABASE_PATH, 755);
+fs.chmodSync(DATABASE_PATH, 777);
 const sequelize = new Sequelize(
     {
         dialect: "sqlite",
