@@ -4,11 +4,10 @@ import { Sequelize } from "sequelize"
 
 export const DATABASE_PATH = path.resolve(process.cwd(), ".next", 'database.sqlite')
 
-console.log(path.resolve(process.cwd(), ".next"))
 if (!fs.existsSync(DATABASE_PATH)) {
-    console.log("CRETE")
     fs.writeFileSync(DATABASE_PATH, '')
 }
+fs.chmodSync(DATABASE_PATH, 755);
 const sequelize = new Sequelize(
     {
         dialect: "sqlite",
