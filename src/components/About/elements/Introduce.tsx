@@ -13,7 +13,7 @@ const Introduce = () => {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    src="/background/VIMB-Vanuatu-Citizenship.jpg"
+                    src="/background/VIMB-About-US.jpg"
                     alt="VIMB-Vanuatu-Citizenship"
                 />
 

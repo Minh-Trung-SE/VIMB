@@ -20,8 +20,13 @@ const Main: FC<HTMLAttributes<HTMLDivElement>> = ({className = "p-5 rounded spac
                         className="h-10 w-auto block mx-auto"
                     />
                     <div className="space-y-2">
-                    <p className="text-sm">iCount House, Kumul Highway. <br/> Port Vila, Vanuatu</p>
-                    <button className="w-full bg-vn-red text-white rounded px-4 py-2">Contact US</button>
+                        <p className="text-sm">iCount House, Kumul Highway. <br/> Port Vila, Vanuatu</p>
+                        <Link
+                            href="/contact-us"
+                            className="block w-full text-center bg-vn-red text-white rounded px-4 py-2"
+                        >
+                            Contact US
+                        </Link>
                     </div>
                 </div>
                 <div className="space-y-5 flex-none">
