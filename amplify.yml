@@ -8,3 +8,7 @@ frontend:
     postBuild:
       commands:
         - chmod 777 .
+  artifacts:
+    baseDirectory: .next
+    files:
+      - '**/*'
