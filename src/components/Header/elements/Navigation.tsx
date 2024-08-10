@@ -43,7 +43,12 @@ const Navigation = () => {
                     </Link>
                 </nav>
 
-                <button className="bg-vn-red text-white rounded px-4 py-2">Contact US</button>
+                <Link
+                    href="/contact-us"
+                    className="bg-vn-red text-white rounded px-4 py-2"
+                >
+                    Contact US
+                </Link>
             </div>
         </Container>
     )

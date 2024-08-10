@@ -17,7 +17,7 @@ const Countries: FC<CountriesProps> = ({language}) => {
 
     return (
         <div className="gap-5">
-            <div className="grid gap-5 grid-cols-4">
+            <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
                 {
                     RECOGNIZED_COUNTRIES.map(
                         (country) => <Country key={country.code} country={country} language={language}/>
@@ -26,8 +26,7 @@ const Countries: FC<CountriesProps> = ({language}) => {
             </div>
             <h2 className="py-5 text-primary text-md font-medium">Unrecognized or partially recognized regions</h2>
 
-            <div className="grid gap-5 grid-cols-4">
-
+            <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
                 {
                     UNRECOGNIZED_TERRITORIES.map(
                         (country) => <Country key={country.code} country={country} language={language}/>
@@ -35,7 +34,7 @@ const Countries: FC<CountriesProps> = ({language}) => {
                 }
             </div>
             <h2 className="py-5 text-primary text-md font-medium">Dependent and autonomous territories</h2>
-            <div className="grid gap-5 grid-cols-4">
+            <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
 
                 {
                     DEPENDENT_TERRITORIES.map(

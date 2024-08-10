@@ -9,10 +9,11 @@ type ListCheckboxProps = {
         name: ReactNode,
         value: string | number
     }[]
-    control: UseControllerProps
+    control: UseControllerProps,
+    placeholder?: ReactNode
 } & HTMLAttributes<HTMLButtonElement>
 
-const ListCheckbox: FC<ListCheckboxProps> = ({items, control, className, ...props}) => {
+const ListCheckbox: FC<ListCheckboxProps> = ({items, control, placeholder, className, ...props}) => {
 
     const {setValue} = useFormContext()
     const {field, fieldState} = useController(control)
@@ -28,14 +29,14 @@ const ListCheckbox: FC<ListCheckboxProps> = ({items, control, className, ...prop
         <Root>
             <Trigger asChild>
                 <button
-                    data-input-invalid={fieldState.invalid}
+                    data-input-invalid={fieldState.invalid ? "invalid" : "valid"}
                     className={twMerge("outline-none min-w-full py-1 px-2 flex items-center rounded border-2 focus:border-sky-700 data-input-invalid:focus:border-gemini-error data-input-invalid:border-gemini-error transition-colors duration-200", className)}
                     {...props}
                 >
                     <div className="grow text-left">
                         {
                             items.find(item => item.value === value)?.name ?? (
-                                <span className="text-zinc-200">Select</span>
+                                <span className="opacity-50"> { placeholder ?? "Select"}</span>
                             )
                         }
                     </div>

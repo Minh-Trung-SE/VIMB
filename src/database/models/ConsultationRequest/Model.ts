@@ -3,11 +3,13 @@ import {DataTypes, Model, Optional} from 'sequelize';
 
 export type ConsultationRequestAttributes = {
     id: number;
-    name: string;
-    email: string;
+    fullName: string;
     phone: string;
+    location: string;
     message: string;
-    consultationType: string;
+    status: string;
+    meta?: object;
+    attributes?: object;
     createdAt: Date;
     updatedAt: Date;
 }
@@ -16,11 +18,12 @@ export type ConsultationRequestCreationAttributes = Optional<ConsultationRequest
 
 class ConsultationRequest extends Model<ConsultationRequestAttributes, ConsultationRequestCreationAttributes> {
     public id!: number;
-    public name!: string;
-    public email!: string;
+    public fullName!: string;
     public phone!: string;
     public message!: string;
-    public consultationType!: string;
+    public status!: string;
+    public meta?: object;
+    public attributes?: object;
     public createdAt!: Date;
     public updatedAt!: Date;
 }
@@ -32,25 +35,36 @@ ConsultationRequest.init(
             autoIncrement: true,
             primaryKey: true,
         },
-        name: {
+        fullName: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
-        email: {
+        location: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         phone: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: false
         },
         message: {
-            type: DataTypes.TEXT,
-            allowNull: false,
+            type: DataTypes.STRING,
+            allowNull: false
         },
-        consultationType: {
+        status: {
             type: DataTypes.STRING,
             allowNull: false,
+            defaultValue: 'PENDING'
+        },
+        meta: {
+            type: DataTypes.JSON,
+            allowNull: true,
+            defaultValue: {}
+        },
+        attributes: {
+            type: DataTypes.JSON,
+            allowNull: true,
+            defaultValue: {}
         },
         createdAt: {
             type: DataTypes.DATE,

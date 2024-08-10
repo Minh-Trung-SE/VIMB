@@ -5,8 +5,10 @@ const sequelize = new Sequelize(
     {
         dialect: "sqlite",
         dialectModule: require("sqlite3"),
-        storage: path.resolve(process.env.SQL_LITE_STORAGE_PATH!, 'database.sqlite')
+        storage: path.resolve(process.cwd(), 'database.sqlite')
     }
 )
+
+
 
 export default sequelize;
