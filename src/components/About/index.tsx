@@ -4,16 +4,26 @@ import Container from "@src/components/Container";
 import React from 'react';
 import Information from "@src/components/About/elements/Information";
 import ActsAs from "@src/components/About/elements/ActsAs";
+import Supporting from "@src/components/About/elements/Supporting";
 
 const About = () => {
 
     return (
-        <Container className="py-10 space-y-10">
-            <Introduce/>
-            <QuickFacts/>
-            <Information/>
-            <ActsAs/>
-        </Container>
+        <div className="space-y-10">
+            <Container className="py-10">
+                <Introduce/>
+            </Container>
+            <Container className="bg-primary">
+            <Supporting/>
+
+            </Container>
+
+            <Container className="py-10 space-y-10">
+                <QuickFacts/>
+                <Information/>
+                <ActsAs/>
+            </Container>
+        </div>
     );
 };
 

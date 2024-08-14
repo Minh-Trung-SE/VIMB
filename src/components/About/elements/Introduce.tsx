@@ -6,7 +6,7 @@ import displayMessage from "@src/ultils/language";
 const Introduce = () => {
     const language = getServerLanguage()
     return (
-        <div className="space-y-5">
+        <div>
             <div className="flex flex-wrap-reverse sm:flex-nowrap">
                 <Image
                     className="block w-full sm:w-3/5"
@@ -44,7 +44,7 @@ const Introduce = () => {
                                 displayMessage(
                                     {
                                         vi: "Văn phòng Quốc tịch Vanuatu đã chỉ định VIMB làm đại lý cho chương trình Quốc tịch theo diện Đầu tư (CBI) của Vanuatu. Hiện chúng tôi đã mở rộng sang châu Á để đảm bảo nguồn vốn đầu tư nước ngoài thông qua chương trình CBI.",
-                                        en: "The Vanuatu Citizenship Office has designated VIMB as their agent for Vanuatu’s Citizenship By Investment (CBI) program. We have now expanded to Asia to secure foreign investment funding via its CBI program."
+                                        en: "VIMB là thành viên hỗ trợ chính cho sự tham gia vô cùng thành công của Vanuatu tại Triển lãm Dubai Expo 2020 và hiện đang tham gia chặt chẽ vào chương trình nghị sự về biến đổi khí hậu của Vanuatu. Thông qua mạng lưới quốc tế và sự hợp tác với chính phủ, các tổ chức phi chính phủ và khu vực tư nhân, VIMB hiện đang dẫn đầu các nỗ lực của Vanuatu nhằm đảm bảo nguồn tài chính quốc tế để giúp đất nước này thành trung tâm phát triển bền vững khu vực Nam Thái Bình Dương."
                                     },
                                     language
                                 )
@@ -57,13 +57,13 @@ const Introduce = () => {
             </div>
 
             <div className="flex flex-wrap space-y-5">
-                <div className="w-full sm:w-1/2 sm:py-10  text-lg pr-5">
+                <div className="w-full sm:w-3/5 sm:py-10  text-lg pr-5">
                     <p>
                         {
                             displayMessage(
                                 {
-                                    en: "Vanuatu’s CBI program is named Capital Investment Immigration Plan (CIIP).",
-                                    vi: "Chương trình CBI của Vanuatu có tên là Kế hoạch Nhập cư Đầu tư Vốn (CIIP)."
+                                    en: "VIMB was a key supporting member of Vanuatu’s highly successful participation in Dubai Expo 2020 and, is now closely involved in Vanuatu’s climate change agenda. Through its international network and engagement with government, NGOs and the private sector, VIMB now leads Vanuatu’s efforts to secure international climate finance to transform the country into a regional sustainable development hub for the South Pacific.",
+                                    vi: "Vanuatu đã cam kết thực hiện Chiến lược phát triển phát thải thấp (LEDS) dài hạn theo Công ước của Liên hợp quốc về biến đổi khí hậu (UNFCCC), phù hợp với Thỏa thuận Paris nhằm hạn chế tình trạng nóng lên toàn cầu. Vanuatu đã chỉ định nhiều con đường để giảm phát thải trong mọi lĩnh vực và mở rộng khả năng thích ứng và phục hồi khí hậu đến năm 2050."
                                 },
                                 language
                             )
@@ -74,8 +74,8 @@ const Introduce = () => {
                         {
                             displayMessage(
                                 {
-                                    en: "The foreign funds raised through this program is to enhance Vanuatu’s biofuels industry to becoming carbon zero by 2030.",
-                                    vi: "Nguồn vốn nước ngoài huy động được thông qua chương trình này nhằm mục đích nâng cao ngành công nghiệp nhiên liệu sinh học của Vanuatu trở thành ngành không có carbon vào năm 2030."
+                                    en: "Vanuatu has committed to a long term Low Emissions Development Strategy (LEDS) to the United Nations Framework Convention on Climate Change (UNFCCC), in line with the Paris Agreement to limit global warming. Vanuatu has designated many pathways to lower emissions across all sectors and expanded climate adaptation and resilience to 2050.",
+                                    vi: "Chương trình Đầu tư nhập tịch (CBI) của Vanuatu có tên là Capital Investment Immigration Plan (CIIP). Nguồn vốn nước ngoài huy động thông qua chương trình này nhằm mục đích nâng cao ngành nhiên liệu sinh học của Vanuatu để đạt mục tiêu không phát thải carbon vào năm 2030. Cơ hội này cho phép tầng lớp trung lưu, thượng lưu của Việt Nam mở rộng phạm vi đi lại và kinh doanh trên thế giới với ít rắc rối hơn thông qua hộ chiếu Vanuatu, mà không cần nghĩa vụ hoặc trách nhiệm công dân."
                                 },
                                 language
                             )
@@ -86,7 +86,7 @@ const Introduce = () => {
                         {
                             displayMessage(
                                 {
-                                    en: "This allows Vietnam’s upper middle class expand their travel and business reach in the world with less hassle through Vanuatu’s passport.",
+                                    en: "Vanuatu’s Citizenship By Investment (CBI) program is named Capital Investment Immigration Plan (CIIP). The foreign funds raised through this program is to enhance Vanuatu’s biofuels industry to becoming carbon zero by 2030. This opportunity allows Vietnam’s upper middle class expand their travel and business reach in the world with less hassle through a stronger Vanuatu passport, without civic duties or obligations.",
                                     vi: "Điều này cho phép tầng lớp trung lưu, thượng lưu của Việt Nam mở rộng phạm vi đi lại và kinh doanh trên thế giới với ít rắc rối hơn nhờ hộ chiếu Vanuatu."
                                 },
                                 language
@@ -96,7 +96,7 @@ const Introduce = () => {
                 </div>
 
                 <Image
-                    className="block w-full sm:w-1/2 h-80 object-cover"
+                    className="block w-full sm:w-2/5 object-cover"
                     width={0}
                     height={0}
                     sizes="100vw"

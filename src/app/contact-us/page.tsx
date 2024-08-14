@@ -4,6 +4,7 @@ import ContactForm from "@src/components/ContactUs/elements/ContactForm";
 import getServerLanguage from "@src/ultils/getServerLanguage";
 import displayMessage from "@src/ultils/language";
 import Image from "next/image";
+import ContactUSForm from "@src/components/ContactUs/elements/ContactUsForm";
 
 
 const Team = () => {
@@ -32,7 +33,7 @@ const Team = () => {
                     height={0}
                     className="w-full h-full object-cover rounded"
                 />
-                <ContactForm language={language}/>
+                <ContactUSForm language={language}/>
             </div>
         </Container>
     );

@@ -1,7 +1,5 @@
 "use client"
 import {joiResolver} from "@hookform/resolvers/joi";
-import {TRIGGER_TOAST_TYPE, triggerToast} from "@src/common/Sonner";
-import axios from "axios";
 import React, {FC} from 'react';
 import {FormProvider, useForm} from "react-hook-form";
 import Joi from "joi";
@@ -10,10 +8,20 @@ import {Language} from "@src/constants/Language";
 import displayMessage from "@src/ultils/language";
 
 type ContactFormProps = {
-    language: Language
+    language: Language,
+    setContactValues: (
+        data: {
+            fullName: string
+            location: string
+            phone: string
+            message: string
+        }
+    ) => void
+    setStep: (step: string) => void
 }
 
-const ContactForm: FC<ContactFormProps> = ({language}) => {
+const ContactForm: FC<ContactFormProps> = ({language, setContactValues, setStep}) => {
+    console.log(setContactValues)
     const form = useForm(
         {
             defaultValues: {
@@ -44,18 +52,8 @@ const ContactForm: FC<ContactFormProps> = ({language}) => {
                 onSubmit={
                     form.handleSubmit(
                         async (data) => {
-                            await axios.post(
-                                "api/consultation-requests",
-                                data
-                            )
-                            triggerToast(
-                                {
-                                    header: "Send Successfully",
-                                    body: "Thank you for your message. We will get back to you soon.",
-                                    type: TRIGGER_TOAST_TYPE.SUCCESS,
-                                }
-                            )
-                            form.reset()
+                            setContactValues(data)
+                            setStep("QUESTIONER")
                         }
                     )
                 }
@@ -155,9 +153,9 @@ const ContactForm: FC<ContactFormProps> = ({language}) => {
                 </div>
                 <button
                     type="submit"
-                    className="w-full bg-vn-red text-white py-2 px-5 rounded"
+                    className="w-full bg-primary text-white py-2 px-5 rounded"
                 >
-                    Submit
+                    {language === "vi" ? "Tiếp tục" : "Next"}
                 </button>
             </form>
         </FormProvider>
