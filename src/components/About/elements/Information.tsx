@@ -14,20 +14,8 @@ const Information = () => {
                     {
                         displayMessage(
                             {
-                                en: "Over 40 legal and migration firms, authorised as sub-agents of VIMB in Vietnam.",
-                                vi: "Hơn 40 công ty pháp lý và di trú được ủy quyền làm đại lý cấp dưới của VIMB tại Việt Nam."
-                            },
-                            language
-                        )
-                    }
-                </p>
-                <br/>
-                <p>
-                    {
-                        displayMessage(
-                            {
-                                en: "Always check their credentials before proceeding, OR book a consultation directly via our website.",
-                                vi: "Luôn kiểm tra thông tin đăng nhập của họ trước khi tiếp tục HOẶC đăng ký tư vấn trực tiếp qua trang web của chúng tôi."
+                                en: "If your company is interested in becoming a sub-agent of the Vanuatu Citizenship Office, contact us to verify your eligibility, so that you can assist more Vietnamese people access international travel and favourable tax benefits.",
+                                vi: "Nếu công ty của bạn quan tâm đến việc trở thành đại lý của Văn phòng Nhập tịch Vanuatu, hãy liên hệ với chúng tôi để xác minh tính đủ điều kiện của bạn, để bạn có thể hỗ trợ nhiều người Việt Nam hơn tiếp cận được các chuyến du lịch quốc tế và các lợi ích về thuế ưu đãi."
                             },
                             language
                         )

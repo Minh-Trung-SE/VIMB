@@ -14,7 +14,7 @@ const Supporting = () => {
                     }
                 >
 
-                    <h3 className="mt-40 font-medium">Vanuatu's 2030 Sustainable Development Vision"</h3>
+                    <h3 className="mt-40 font-medium">{"Vanuatu's 2030 Sustainable Development Vision"}</h3>
                 </div>
 
                 <div

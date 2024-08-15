@@ -9,7 +9,13 @@ export type ConsultationRequestAttributes = {
     message: string;
     status: string;
     meta?: object;
-    attributes?: object;
+    attributes?: {
+        "question-1": string
+        "question-2": string
+        "question-3": string
+        "question-4": string
+        "question-5": string
+    };
     createdAt: Date;
     updatedAt: Date;
 }

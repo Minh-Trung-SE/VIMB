@@ -50,7 +50,8 @@ const Page = () => {
                                                 type: TRIGGER_TOAST_TYPE.SUCCESS,
                                             }
                                         )
-                                        router.push("/cms")
+                                        router.replace("/dashboard")
+                                        router.refresh()
                                         return
                                     }
                                     triggerToast(
@@ -60,8 +61,6 @@ const Page = () => {
                                             type: TRIGGER_TOAST_TYPE.ERROR,
                                         }
                                     )
-
-                                    // form.reset()
                                 }
                             )
                         }

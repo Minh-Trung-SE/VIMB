@@ -2,15 +2,18 @@ import Container from "@src/components/Container";
 import Link from "next/link";
 import React, {FC, HTMLAttributes} from 'react';
 import Image from "next/image";
+import getServerLanguage from "@src/ultils/getServerLanguage";
+import displayMessage from "@src/ultils/language";
 
 const Main: FC<HTMLAttributes<HTMLDivElement>> = ({className = "p-5 rounded space-y-10", ...props}) => {
+    const language = getServerLanguage()
     return (
         <Container
             className={className}
             {...props}
         >
             <div className="py-10 flex flex-wrap gap-10">
-                <div className="space-y-10 flex-none">
+                <div className="space-y-5 flex-none">
                     <Image
                         sizes="100vw"
                         width={0}
@@ -19,14 +22,47 @@ const Main: FC<HTMLAttributes<HTMLDivElement>> = ({className = "p-5 rounded spac
                         alt="logo"
                         className="h-10 w-auto block mx-auto"
                     />
+                    {
+                        displayMessage(
+                            {
+                                vi: (
+                                    <p className="text-sm max-w-72">
+                                        The <span className="text-vn-red font-medium">ONLY</span> authorised agent in
+                                        Vietnam. Only direct agents of Vanuatu Citizenship Office can process your
+                                        application.
+                                    </p>
+                                ),
+                                en: (
+                                    <p className="text-sm max-w-72">
+                                        Đại lý được ủy quyền <span className="text-vn-red font-medium">DUY NHẤT</span> tại Việt Nam.
+                                        Chỉ có đại lý trực tiếp của Văn phòng Nhập tịch Vanuatu mới có thể xử lý đơn của bạn.
+                                    </p>
+                                )
+                            },
+                            language
+                        )
+                    }
+
+
                     <div className="space-y-2">
-                        <p className="text-sm">iCount House, Kumul Highway. <br/> Port Vila, Vanuatu</p>
                         <Link
                             href="/contact-us"
-                            className="block w-full text-center bg-vn-red text-white rounded px-4 py-2"
+                            className="block max-w-48 w-fit text-center bg-vn-red text-white rounded px-4 py-2"
                         >
                             Contact US
                         </Link>
+                        <p className="max-w-72 text-xs italic">
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "To be assigned an authorised sub-agent in Vietnam for a consultation.",
+                                        en: "Để được chỉ định một đại lý  được ủy quyền tại Việt Nam để tư vấn."
+                                    },
+                                    language
+                                )
+                            }
+
+                        </p>
                     </div>
                 </div>
                 <div className="space-y-5 flex-none">
