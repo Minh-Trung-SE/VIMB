@@ -9,6 +9,8 @@ import AccessCountries from "@src/components/PassportStrength/elements/AccessCou
 export default function Home() {
     return (
         <Container>
+            <h1 className="my-5 font-medium text-2xl text-vn-red">Additional Passport Benefits</h1>
+
             <Strength/>
             <Bypassing/>
             <AccessCountries/>
