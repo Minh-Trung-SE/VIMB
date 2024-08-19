@@ -1,4 +1,5 @@
 "use client"
+import {nanoid} from "nanoid";
 import React, {FC} from 'react';
 import {Language} from "@src/constants/Language";
 import {
@@ -17,10 +18,10 @@ const Countries: FC<CountriesProps> = ({language}) => {
 
     return (
         <div className="gap-5">
-            <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
+            <div className="grid gap-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
                 {
                     RECOGNIZED_COUNTRIES.map(
-                        (country) => <Country key={country.code} country={country} language={language}/>
+                        (country) => <Country key={nanoid()} country={country} language={language}/>
                     )
                 }
             </div>
@@ -29,7 +30,7 @@ const Countries: FC<CountriesProps> = ({language}) => {
             <div className="grid gap-5 grid-cols-2 lg:grid-cols-4">
                 {
                     UNRECOGNIZED_TERRITORIES.map(
-                        (country) => <Country key={country.code} country={country} language={language}/>
+                        (country) => <Country key={nanoid()} country={country} language={language}/>
                     )
                 }
             </div>
@@ -38,7 +39,7 @@ const Countries: FC<CountriesProps> = ({language}) => {
 
                 {
                     DEPENDENT_TERRITORIES.map(
-                        (country) => <Country key={country.code} country={country} language={language}/>
+                        (country) => <Country key={nanoid()} country={country} language={language}/>
                     )
                 }
             </div>

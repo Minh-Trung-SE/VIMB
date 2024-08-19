@@ -1,3 +1,4 @@
+import Badge from "@src/common/Badge";
 import React, {FC} from "react";
 import {type Country} from "@src/components/PassportStrength/data/Countries";
 import {nanoid} from "nanoid";
@@ -19,7 +20,7 @@ const Country: FC<Props> = ({country, language}) => {
                 width={32}
                 height={48}
                 key={country.code}
-                className="block h-8 w-12 object-cover rounded border"
+                className="block h-12 w-16 object-cover rounded border"
                 alt={country.code}
                 src={`/flags/${country.code}.png`}
             />
@@ -41,7 +42,25 @@ const Country: FC<Props> = ({country, language}) => {
                     }
                 </a>
 
-                <p className="text-xs">No visa</p>
+                {
+                    country.status === "E" ? (
+                        <Badge className="text-px-10 text-white" type="intent" intent="primary">
+                            E visa
+                        </Badge>
+                    ) : country.status === "ON_ARRIVAL" ? (
+                        <Badge className="text-px-10 text-white" type="intent" intent="success">
+                            Visa on arrival
+                        </Badge>
+                    ) : country.status === "REQUIRED" ? (
+                        <Badge className="text-px-10 text-white" type="intent" intent="warning">
+                            Visa required
+                        </Badge>
+                    ) : (
+                        <Badge className="text-px-10" type="outline" intent="primary">
+                            No visa
+                        </Badge>
+                    )
+                }
             </div>
             <a
                 href={country.link}

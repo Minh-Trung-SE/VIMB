@@ -44,7 +44,7 @@ const Introduce = () => {
                                 displayMessage(
                                     {
                                         vi: "Văn phòng Quốc tịch Vanuatu đã chỉ định VIMB làm đại lý cho chương trình Quốc tịch theo diện Đầu tư (CBI) của Vanuatu. Hiện chúng tôi đã mở rộng sang châu Á để đảm bảo nguồn vốn đầu tư nước ngoài thông qua chương trình CBI.",
-                                        en: "VIMB là thành viên hỗ trợ chính cho sự tham gia vô cùng thành công của Vanuatu tại Triển lãm Dubai Expo 2020 và hiện đang tham gia chặt chẽ vào chương trình nghị sự về biến đổi khí hậu của Vanuatu. Thông qua mạng lưới quốc tế và sự hợp tác với chính phủ, các tổ chức phi chính phủ và khu vực tư nhân, VIMB hiện đang dẫn đầu các nỗ lực của Vanuatu nhằm đảm bảo nguồn tài chính quốc tế để giúp đất nước này thành trung tâm phát triển bền vững khu vực Nam Thái Bình Dương."
+                                        en: "The Vanuatu Citizenship Office has designated VIMB as their agent for Vanuatu’s Citizenship By Investment (CBI) program. We have now expanded to Asia to secure foreign investment funding via its CBI program."
                                     },
                                     language
                                 )

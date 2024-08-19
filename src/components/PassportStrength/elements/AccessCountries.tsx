@@ -14,9 +14,7 @@ const AccessCountries = () => {
     return (
         <div className="py-10 space-y-10">
             <h1 className="px-5 py-2 font-medium text-2xl bg-primary text-white">Vanuatu Passport has access to the following countries</h1>
-
             <Countries language={language}/>
-
         </div>
     );
 };

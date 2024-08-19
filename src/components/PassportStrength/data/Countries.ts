@@ -2,6 +2,7 @@ export type Country = {
     name: string
     link: string
     code: string
+    status?: "E" | "ON_ARRIVAL" | "REQUIRED"
 }
 
 export const DEPENDENT_TERRITORIES : Country[] = [
@@ -59,25 +60,25 @@ export const UNRECOGNIZED_TERRITORIES : Country[] = [
 ];
 
 export const RECOGNIZED_COUNTRIES : Country[] = [
-    { name: "Afghanistan", code: "AF", link: "https://en.wikipedia.org/wiki/Afghanistan" },
-    { name: "Albania", code: "AL", link: "https://en.wikipedia.org/wiki/Albania" },
-    { name: "Algeria", code: "DZ", link: "https://en.wikipedia.org/wiki/Algeria" },
-    { name: "Andorra", code: "AD", link: "https://en.wikipedia.org/wiki/Andorra" },
-    { name: "Angola", code: "AO", link: "https://en.wikipedia.org/wiki/Angola" },
+    { name: "Afghanistan", code: "AF", link: "https://en.wikipedia.org/wiki/Afghanistan", status: "REQUIRED" },
+    { name: "Albania", code: "AL", link: "https://en.wikipedia.org/wiki/Albania", status: "REQUIRED" },
+    { name: "Algeria", code: "DZ", link: "https://en.wikipedia.org/wiki/Algeria", status: "REQUIRED" },
+    { name: "Andorra", code: "AD", link: "https://en.wikipedia.org/wiki/Andorra", status: "REQUIRED" },
+    { name: "Angola", code: "AO", link: "https://en.wikipedia.org/wiki/Angola", status: "REQUIRED"},
     { name: "Antigua and Barbuda", code: "AG", link: "https://en.wikipedia.org/wiki/Antigua_and_Barbuda" },
-    { name: "Argentina", code: "AR", link: "https://en.wikipedia.org/wiki/Argentina" },
-    { name: "Armenia", code: "AM", link: "https://en.wikipedia.org/wiki/Armenia" },
-    { name: "Australia", code: "AU", link: "https://en.wikipedia.org/wiki/Australia" },
-    { name: "Austria", code: "AT", link: "https://en.wikipedia.org/wiki/Austria" },
-    { name: "Azerbaijan", code: "AZ", link: "https://en.wikipedia.org/wiki/Azerbaijan" },
+    { name: "Argentina", code: "AR", link: "https://en.wikipedia.org/wiki/Argentina", status: "REQUIRED" },
+    { name: "Armenia", code: "AM", link: "https://en.wikipedia.org/wiki/Armenia", status: "E" },
+    { name: "Australia", code: "AU", link: "https://en.wikipedia.org/wiki/Australia", status: "REQUIRED" },
+    { name: "Austria", code: "AT", link: "https://en.wikipedia.org/wiki/Austria", status: "REQUIRED" },
+    { name: "Azerbaijan", code: "AZ", link: "https://en.wikipedia.org/wiki/Azerbaijan", status: "REQUIRED" },
     { name: "Bahamas", code: "BS", link: "https://en.wikipedia.org/wiki/The_Bahamas" },
-    { name: "Bahrain", code: "BH", link: "https://en.wikipedia.org/wiki/Bahrain" },
-    { name: "Bangladesh", code: "BD", link: "https://en.wikipedia.org/wiki/Bangladesh" },
+    { name: "Bahrain", code: "BH", link: "https://en.wikipedia.org/wiki/Bahrain", status: "REQUIRED" },
+    { name: "Bangladesh", code: "BD", link: "https://en.wikipedia.org/wiki/Bangladesh", status: "REQUIRED" },
     { name: "Barbados", code: "BB", link: "https://en.wikipedia.org/wiki/Barbados" },
     { name: "Belarus", code: "BY", link: "https://en.wikipedia.org/wiki/Belarus" },
-    { name: "Belgium", code: "BE", link: "https://en.wikipedia.org/wiki/Belgium" },
+    { name: "Belgium", code: "BE", link: "https://en.wikipedia.org/wiki/Belgium", status: "REQUIRED" },
     { name: "Belize", code: "BZ", link: "https://en.wikipedia.org/wiki/Belize" },
-    { name: "Benin", code: "BJ", link: "https://en.wikipedia.org/wiki/Benin" },
+    { name: "Benin", code: "BJ", link: "https://en.wikipedia.org/wiki/Benin", status: "ON_ARRIVAL" },
     { name: "Bhutan", code: "BT", link: "https://en.wikipedia.org/wiki/Bhutan" },
     { name: "Bolivia", code: "BO", link: "https://en.wikipedia.org/wiki/Bolivia" },
     { name: "Bosnia and Herzegovina", code: "BA", link: "https://en.wikipedia.org/wiki/Bosnia_and_Herzegovina" },
