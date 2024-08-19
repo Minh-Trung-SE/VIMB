@@ -7,7 +7,7 @@ const Strength = () => {
     const language = getServerLanguage()
     return (
         <div className="mt-5">
-            <h2 className="px-5 py-2 text-2xl font-medium text-xl bg-primary text-white">Passport strength facts</h2>
+            <h2 className="px-5 py-2 text-2xl font-medium bg-primary text-white">Passport strength facts</h2>
 
             {
                 language === LANGUAGES.VI ? (
