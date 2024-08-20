@@ -1,110 +1,602 @@
+import getServerLanguage from "@src/ultils/getServerLanguage";
+import displayMessage from "@src/ultils/language";
+
 const Benefits = () => {
+    const language = getServerLanguage();
+
+
     return (
         <div className="py-10">
             <h1 className="px-5 py-2 font-medium text-2xl bg-primary text-white">Vanuatu Citizenship benefits</h1>
-            <div className="grid grid-cols-6 gap-5 py-10">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-5 py-10">
                 <div className="space-y-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
+                    <div className="mx-auto size-14 p-2 rounded-full border-2 border-primary">
                         <svg
-                            className="h-full w-full"
-                            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"
+                            enableBackground="new 0 0 64 64"
+
+                            version="1.1" viewBox="0 0 64 64"
+                            xmlSpace="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
                             <path
-                                className="fill-primary"
-                                d="M129.6 208c5.25 31.25 25.62 57.13 53.25 70.38C175.3 259.4 170.3 235 168.8 208H129.6zM129.6 176h39.13c1.5-27 6.5-51.38 14.12-70.38C155.3 118.9 134.9 144.8 129.6 176zM224 286.8C231.8 279.3 244.8 252.3 247.4 208H200.5C203.3 252.3 216.3 279.3 224 286.8zM265.1 105.6C272.8 124.6 277.8 149 279.3 176h39.13C313.1 144.8 292.8 118.9 265.1 105.6zM384 0H64C28.65 0 0 28.65 0 64v384c0 35.35 28.65 64 64 64h320c35.2 0 64-28.8 64-64V64C448 28.8 419.2 0 384 0zM336 416h-224C103.3 416 96 408.8 96 400S103.3 384 112 384h224c8.75 0 16 7.25 16 16S344.8 416 336 416zM224 320c-70.75 0-128-57.25-128-128s57.25-128 128-128s128 57.25 128 128S294.8 320 224 320zM265.1 278.4c27.62-13.25 48-39.13 53.25-70.38h-39.13C277.8 235 272.8 259.4 265.1 278.4zM200.6 176h46.88C244.7 131.8 231.8 104.8 224 97.25C216.3 104.8 203.2 131.8 200.6 176z"
-                            />
+                                d="M47,14h5c2.2,0,4,1.8,4,4v30c0,2.2-1.8,4-4,4H12c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h5"
+                                fill="#E5E5E5"/>
+                            <path d="M52,14h-5H17h-5c-2.2,0-4,1.8-4,4v5h48v-5C56,15.8,54.2,14,52,14z" fill="#EA685E"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" strokeLinejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="35" x2="41" y1="14" y2="14"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="23" x2="29" y1="14" y2="14"/>
+                            <path d="  M35,52H12c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h5" fill="none" stroke="#2C3E50"
+                                  strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <path d="  M47,14h5c2.2,0,4,1.8,4,4v17" fill="none" stroke="#2C3E50" strokeLinecap="round"
+                                  strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="29" cy="31.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="36" cy="31.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="43" cy="31.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="50" cy="31.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="29" cy="38.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="22" cy="38.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="15" cy="38.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="36" cy="38.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="29" cy="45.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="22" cy="45.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <circle cx="15" cy="45.2" fill="none" r="1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="32" x2="32" y1="16" y2="10"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="20" x2="20" y1="16" y2="10"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="44" x2="44" y1="16" y2="10"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="8" x2="56" y1="23" y2="23"/>
+                            <circle cx="49.2" cy="48" fill="#D4C8BC" r="11.1"/>
+                            <path d="M43.4,38.5l5.6,9.3l10.6-3.6c0,0-1.9-5-6.6-6.6C48.3,35.9,44.7,37.6,43.4,38.5z"
+                                  fill="#FFD766"/>
+                            <circle cx="49.2" cy="48" fill="none" r="11.1" stroke="#2C3E50" strokeLinecap="round"
+                                    stroke-linejoin="round" strokeMiterlimit="10" strokeWidth="2"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="49.2" x2="54.3" y1="48" y2="46.2"/>
+                            <line fill="none" stroke="#2C3E50" strokeLinecap="round" stroke-linejoin="round"
+                                  strokeMiterlimit="10" strokeWidth="2" x1="49.2" x2="45.1" y1="48" y2="41.4"/>
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
-                        An administrative resource for supporting the Vanuatu Citizenship and Vanuatu Permanent
-                        Residency application processes
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Hộ chiếu trong 2 tháng",
+                                    en: "Passport to 2 months"
+                                },
+                                language
+                            )
+                        }
                     </p>
                 </div>
                 <div className="space-y-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <svg className='w-full h-full' viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                    <div className="mx-auto size-14 p-2 rounded-full border-2 border-primary">
+                        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                             <path
+                                d="M417.84,281.53V45.89a6.75,6.75,0,0,0-6.75-6.75H141.59a6.75,6.75,0,0,0-6.75,6.75V82H112.06a6.75,6.75,0,0,0-6.75,6.75V219.48a41.94,41.94,0,0,0-31.94,40.68V451.55a21.33,21.33,0,0,0,21.31,21.31H417.32a21.33,21.33,0,0,0,21.31-21.31V302.82A21.33,21.33,0,0,0,417.84,281.53ZM148.34,52.64h256V281.52H386.7V141.84c0-.23,0-.45,0-.68s-.05-.37-.08-.55,0-.07,0-.11a6.7,6.7,0,0,0-1.88-3.46L331,84a5,5,0,0,0-.54-.49l-.07-.06q-.22-.18-.45-.33l-.1-.06c-.15-.1-.31-.19-.47-.28l-.09,0-.5-.24-.08,0a4.29,4.29,0,0,0-.54-.19l-.09,0a5.29,5.29,0,0,0-.54-.13l-.2,0a3.5,3.5,0,0,0-.45-.07c-.22,0-.45,0-.67,0H148.34ZM333,104.92l30.54,30.17H333Zm-13.5-9.4v46.32a6.75,6.75,0,0,0,6.75,6.75h47V281.52H340.62V260.16a41.93,41.93,0,0,0-41.88-41.89H118.81V95.52Zm105.66,356a7.82,7.82,0,0,1-7.81,7.81H94.68a7.82,7.82,0,0,1-7.81-7.81V260.16a28.43,28.43,0,0,1,28.39-28.39H298.74a28.42,28.42,0,0,1,28.38,28.39v28.11a6.76,6.76,0,0,0,6.75,6.75h83.45a7.82,7.82,0,0,1,7.81,7.8Z"
                                 className="fill-primary"
-                                d="M288 0C146.6 0 32 114.6 32 256s114.6 256 256 256s256-114.6 256-256S429.4 0 288 0zM370.1 289.5C371.6 288.5 373.1 288 374.8 288h12.11c3.148 0 6.055 2 7.387 5l5.328 12.75c.6055 1.5 2.059 2.5 3.633 2.5h3.875c1.695 0 3.27-1.125 3.754-2.875l4.238-14.5C415.6 289.3 417.2 288 419 288h6.055c2.18 0 3.996 1.75 3.996 4v13c0 2.125 .8477 4.125 2.301 5.625l11.87 11.88c3.027 3 4.723 7.125 4.723 11.38v24.5c0 1.793-.4531 3.52-1.021 5.195c-2.395 3.523-5.031 6.867-7.646 10.22l-5.5 5.461C430.8 382.3 426.7 384 422.4 384H407.3c-4.238 0-8.355-1.75-11.26-4.75l-13.08-13c-6.66-6.625-16.23-9.25-25.43-7l-21.19 5.375c-1.332 .25-2.664 .375-3.996 .375h-10.29c-4.238 0-8.355-1.625-11.26-4.625L298.8 348.5c-1.453-1.5-2.301-3.625-2.301-5.75v-10.12c0-3.25 1.938-6.25 5.086-7.5l39.23-15.75c2.059-.75 3.875-1.75 5.691-3L370.1 289.5zM288 48c18.66 0 36.66 2.699 53.88 7.328v.7344c0 9.945-4.623 19.32-12.51 25.38l-29.86 22.93c-5.086 3.375-4.723 11 .8477 13.75l10.78 5.5c5.449 2.625 8.84 8.25 8.84 14.25V216c0 4.375-3.512 8-7.992 8h-3.027c-3.027 0-5.812-1.75-7.145-4.375c-1.574-3.125-5.934-3.375-7.75-.375l-17.44 29C273.7 253 268.5 256 262.9 256H262.6C258.3 256 254.3 257.8 251.3 260.8L245.6 266.4c-3.027 3.125-3.027 8.125 0 11.25l5.691 5.75c3.027 3 4.723 7 4.723 11.25V304c0 8.875-7.145 16-15.98 16H233.9c-6.055 0-11.62-3.375-14.29-8.875L196.9 265.9C194.5 261 187.1 260 184.1 263.9L164.7 283.3C161.7 286.3 157.6 288 153.3 288H82.72C81.1 277.5 80 266.9 80 256C80 141.3 173.3 48 288 48z"
                             />
-                        </svg>
-
-                    </div>
-                    <p className="text-center text-xs">
-                        A resource for exploring investment opportunities in Vanuatu, and bi-lateral trade
-                    </p>
-                </div>
-                <div className="space-y-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <svg className="w-full h-full" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
                             <path
+                                d="M158.22,148.59H296.47a6.75,6.75,0,0,0,0-13.5H158.22a6.75,6.75,0,0,0,0,13.5Z"
                                 className="fill-primary"
-                                d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z"
+                            />
+                            <path
+                                d="M296.47,176.52H258.84a6.75,6.75,0,1,0,0,13.5h37.63a6.75,6.75,0,0,0,0-13.5Z"
+                                className="fill-primary"
+                            />
+                            <path
+                                d="M158.22,190h69.12a6.75,6.75,0,0,0,0-13.5H158.22a6.75,6.75,0,0,0,0,13.5Z"
+                                className="fill-primary"
+                            />
+                            <path
+
+                                d="M256.29,326.53a6.75,6.75,0,0,0-12.74,0l-31.77,90.14a6.75,6.75,0,0,0,12.74,4.49l6.65-18.86h37.5l6.65,18.86a6.75,6.75,0,0,0,12.74-4.49ZM235.92,388.8l.49-1.39,1.72-4.86a0,0,0,0,1,0,0l11.78-33.44,14,39.72Z"
+                                className="fill-primary"
+                            />
+                            <path
+
+                                d="M200.92,321.19h-52a6.75,6.75,0,0,0,0,13.5h19.25v83.38a6.75,6.75,0,0,0,13.5,0V334.69h19.25a6.75,6.75,0,1,0,0-13.5Z"
+                                className="fill-primary"
+                            />
+                            <path
+
+                                d="M366.53,322.14a6.75,6.75,0,0,0-9.25,2.35l-21,35.25-21-35.25a6.75,6.75,0,1,0-11.6,6.9l24.73,41.55L303.7,414.49a6.75,6.75,0,1,0,11.6,6.91l21-35.26,21,35.26a6.75,6.75,0,1,0,11.6-6.91l-24.73-41.55,24.73-41.55A6.74,6.74,0,0,0,366.53,322.14Z"
+                                className="fill-primary"
                             />
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
-                        An information resource for tourism, property investment and travel related enquiries
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    en: "Great tax benefits",
+                                    vi: "Lợi ích thuế tuyệt vời"
+                                },
+                                language
+                            )
+                        }
                     </p>
                 </div>
                 <div className="space-y-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
+                    <div className="mx-auto size-14 p-2 rounded-full border-2 border-primary">
+                        <svg
+                            enableBackground="new 0 0 64 64"
+                            id="Layer_1"
+                            version="1.1"
+                            viewBox="0 0 64 64"
+                            xmlSpace="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                        >
+                            <polyline
+                                fill="#E5E5E5"
+                                points="56,22 56,54.5 40,59.5 24,54.5 8,59.5 8,26.5 24,21.8 "
+                            />
+                            <polygon fill="#B7B7B7" points="24,21.8 24,54.5 40,59.5 40,21.9 "/>
+                            <path
+                                d="M40,40.1c0,0,13.6-9.2,13.6-22.5C53.6,10.1,47.5,4,40,4s-13.6,6.1-13.6,13.6c0,10,6.9,16.7,10.9,20.2  L40,40.1z"
+                                fill="#FFD766"
+                            />
+                            <path
+                                d="M44.7,11.3c-0.6,0.4-1.6,1.1-2.7,2L33.4,12l-0.6,1.5l6.2,2.2c-1.8,1.5-4,3.3-4,3.3l-1.9-1.4l-0.9,0.8  l2.7,2.7c0,0,10.4-7,12.1-8.3C48.7,11.7,46.6,10.1,44.7,11.3z"
+                                fill="#4B687F"
+                            />
+                            <path
+                                d="  M44.7,11.3c-0.6,0.4-1.6,1.1-2.7,2L33.4,12l-0.6,1.5l6.2,2.2c-1.8,1.5-4,3.3-4,3.3l-1.9-1.4l-0.9,0.8l2.7,2.7c0,0,10.4-7,12.1-8.3  C48.7,11.7,46.6,10.1,44.7,11.3z"
+                                fill="none"
+                                stroke="#2C3E50"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#2C3E50"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={33}
+                                x2={43}
+                                y1={24}
+                                y2={24}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#2C3E50"
+                                strokeDasharray="0,3"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={24}
+                                x2={24}
+                                y1={26}
+                                y2={51}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#2C3E50"
+                                strokeDasharray="0,3"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={40}
+                                x2={40}
+                                y1={56}
+                                y2={42}
+                            />
+                            <polyline
+                                fill="none"
+                                points="  56,22 56,54.5 40,59.5 24,54.5 8,59.5 8,26.5 24,21.8 "
+                                stroke="#2C3E50"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <path
+                                d="  M24,22"
+                                fill="none"
+                                stroke="#2C3E50"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <path
+                                d="  M40,40.1c0,0,13.6-9.2,13.6-22.5C53.6,10.1,47.5,4,40,4s-13.6,6.1-13.6,13.6c0,10,6.9,16.7,10.9,20.2L40,40.1z"
+                                fill="none"
+                                stroke="#2C3E50"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                        </svg>
+                    </div>
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    en: "Visa free travel to 112 countries",
+                                    vi: "Du lịch dễ dàng đến 112 quốc gia"
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                </div>
+                <div className="space-y-5">
+                    <div className="mx-auto size-14 p-2 rounded-full border-2 border-primary">
                         <svg
                             enableBackground="new 0 0 128 128"
+                            id="Layer_1"
                             version="1.1"
                             viewBox="0 0 128 128"
                             xmlSpace="preserve"
-                            xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
                         >
-                            <g>
-                                <path
-                                    className="fill-primary"
-                                    d="M64,126c34.2,0,62-27.8,62-62S98.2,2,64,2S2,29.8,2,64S29.8,126,64,126z M16,88.7l25.2-0.2c2.8,10.1,7.5,19.9,13.9,28.7   C38,114.4,23.7,103.5,16,88.7z M47.6,47H79c2.3,11,2.3,22.3,0.2,33.3l-31.6,0.2C45.3,69.4,45.3,58,47.6,47z M63.3,114.9   c-6.3-8.1-10.9-17-13.7-26.4l27.5-0.2C74.2,97.7,69.6,106.7,63.3,114.9z M71.3,117.5c6.6-9,11.3-18.9,14.1-29.3l26.9-0.2   C104.5,103.7,89.3,115,71.3,117.5z M118,64c0,5.6-0.9,11-2.4,16l-28.3,0.2c2-11,1.9-22.2-0.2-33.2h28.1C117,52.3,118,58.1,118,64z    M111.8,39H85.2c-2.9-10-7.5-19.7-13.9-28.5C89,12.9,103.9,23.8,111.8,39z M76.9,39H49.7c2.9-9.2,7.4-17.9,13.6-25.9   C69.5,21.1,74,29.8,76.9,39z M55.1,10.8C48.8,19.5,44.2,29,41.4,39H16.2C23.9,24.3,38.1,13.6,55.1,10.8z M39.5,47   c-2.1,11.1-2.1,22.4-0.1,33.5l-26.7,0.2C10.9,75.4,10,69.8,10,64c0-5.9,1-11.7,2.8-17H39.5z"
-                                />
+                            <path
+                                d="M103,112H32.1c-2.2,0-4.1-1.3-4.1-3.6V23.6c0-2.2,1.9-3.6,4.1-3.6H103V112z"
+                                fill="#53AF80"
+                            />
+                            <path
+                                d="M103,112H32.1c-2.2,0-4.1-1.3-4.1-3.6V23.6  c0-2.2,1.9-3.6,4.1-3.6H103V112z"
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <path
+                                d="M105,112H36.2c-2.2,0-4.2-1.3-4.2-3.6V23.6c0-2.2,2-3.6,4.2-3.6H105V112z"
+                                fill="#8DCEA8"
+                            />
+                            <path
+                                d="M105,112H36.2c-2.2,0-4.2-1.3-4.2-3.6V23.6  c0-2.2,2-3.6,4.2-3.6H105V112z"
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <circle
+                                cx="68.2"
+                                cy="54.3"
+                                fill="none"
+                                r="21.5"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={69}
+                                x2={69}
+                                y1={32}
+                                y2={76}
+                            />
+                            <path
+                                d="M74.1,33.6c0,0,6.3,8.2,6.3,20.7s-5.3,20.4-5.3,20.4  "
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <path
+                                d="M63.3,33.6c0,0-6.3,8.2-6.3,20.7s5.3,20.4,5.3,20.4"
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={46}
+                                x2={90}
+                                y1={54}
+                                y2={54}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={49}
+                                x2={87}
+                                y1={44}
+                                y2={44}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={49}
+                                x2={87}
+                                y1={64}
+                                y2={64}
+                            />
+                            <line
+                                fill="none"
+                                stroke="#3D3D3D"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={46}
+                                x2={91}
+                                y1={90}
+                                y2={90}
+                            />
+                        </svg>
+
+                    </div>
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    en: "Passport for the whole family",
+                                    vi: "Hộ chiếu cho cả gia đình 4 người"
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                </div>
+                <div className="space-y-5">
+                    <div className="mx-auto size-14 p-2 rounded-full border-2 border-primary">
+                        <svg
+                            enableBackground="new 0 0 50 50"
+                            className="w-full h-full"
+                            version="1.1"
+                            viewBox="0 0 50 50"
+                            xmlSpace="preserve"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                        >
+                            <rect fill="none" height={50} width={50}/>
+                            <circle
+                                cx={25}
+                                cy={25}
+                                fill="none"
+                                r={24}
+                                className="stroke-indigo-950"
+                                strokeLinecap="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <ellipse
+                                cx={25}
+                                cy={25}
+                                fill="none"
+                                rx={12}
+                                ry={24}
+                                className="stroke-indigo-950"
+                                strokeLinecap="round"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <path
+                                d="M6.365,40.438C10.766,37.729,17.479,36,25,36  c7.418,0,14.049,1.682,18.451,4.325"
+                                fill="none"
+                                className="stroke-indigo-950"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <path
+                                d="M43.635,9.563C39.234,12.271,32.521,14,25,14  c-7.417,0-14.049-1.682-18.451-4.325"
+                                fill="none"
+                                className="stroke-indigo-950"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                            />
+                            <line
+                                fill="none"
+                                className="stroke-indigo-950"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={1}
+                                x2={49}
+                                y1={25}
+                                y2={25}
+                            />
+                            <line
+                                fill="none"
+                                className="stroke-indigo-950"
+                                strokeMiterlimit={10}
+                                strokeWidth={2}
+                                x1={25}
+                                x2={25}
+                                y1={1}
+                                y2={49}
+                            />
+                        </svg>
+
+                    </div>
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Không yêu cầu cư trú",
+                                    en: "No resident requirements"
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                </div>
+                <div className="space-y-5">
+                    <div className="mx-auto size-14 p-2 rounded-full border-2 border-primary">
+                        <svg className="w-full h-full fill-yellow-500" viewBox="0 0 31 43" xmlns="http://www.w3.org/2000/svg">
+
+                            <g >
+                                <g >
+                                    <path
+                                        className="cls-1"
+                                        d="M23,2V0H8V2H0V43H31V2ZM10,2H21V3H20V5H11V3H10ZM29,41H2V4H8V5H9V7H22V5h1V4h6Z"
+                                    />
+                                    <rect className="cls-1" height={2} width={15} x={4} y={11}/>
+                                    <rect className="cls-1" height={2} width={13} x={4} y={25}/>
+                                    <rect className="cls-1" height={2} width={17} x={4} y={18}/>
+                                    <rect className="cls-1" height={2} width={15} x={4} y={32}/>
+                                    <rect className="cls-1" height={3} width={9} x={11} y={2}/>
+                                </g>
                             </g>
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
-                        A link to provide seamless communication between Vanuatu and global key geographical centers
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Không có bài kiểm tra văn hóa hoặc phỏng vấn",
+                                    en: "No tests no interviews"
+                                },
+                                language
+                            )
+                        }
                     </p>
                 </div>
+
             </div>
             <table className="w-full border">
 
                 <tbody>
-                <tr className="p-2">
-                    <td className="align-top p-2 border text-sm">
-                        Government CBI cost $165.000 USD
-                        Up to 4 immediate family members
-                    </td>
-                    <td className="align-top p-2 border text-sm">
-                        $50.000 USD of your shares in the CBI program can be redeemed after 5 years
-                    </td>
-                </tr>
                 <tr>
                     <td className="align-top p-2 border text-sm">
-                        Citizenship papers and passport
-                        within 1-3 month
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Giấy tờ tùy thân và hộ chiếu trong vòng 1-3 tháng",
+                                    en: "Citizenship papers and passport within 1-3 month"
+                                },
+                                language
+                            )
+                        }
+
                     </td>
                     <td className="align-top p-2 border text-sm">
-                        <p>0% income tax</p>
-                        <p>0% inheritance tax</p>
-                        <p>0% capital gains tax</p>
-                        <p>0% gift tax</p>
-                        <p>0% international business tax</p>
-                        <p>FC Rules</p>
-                        <p>No currency Restrictions</p>
-                        <p>12.5% VAT / domestic business tax</p>
+                        <p>
+
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thuế thu nhập 0%",
+                                        en: "0% income tax"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p>
+
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thuế thu nhập 0%",
+                                        en: "0% inheritance tax"
+                                    },
+                                    language
+                                )
+                            }
+                        </p>
+                        <p>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thuế thừa kế 0%",
+                                        en: "0% capital gains tax"
+                                    },
+                                    language
+                                )
+                            }
+                            </p>
+                        <p>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thuế quà tặng",
+                                        en: "0% gift tax"
+                                    },
+                                    language
+                                )
+                            }
+                            </p>
+                        <p>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Thuế kinh doanh quốc tế 0%",
+                                        en: "0% international business tax"
+                                    },
+                                    language
+                                )
+                            }
+                            </p>
+                        <p>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Không Có Quy tắc CFC",
+                                        en: "FC Rules"
+                                    },
+                                    language
+                                )
+                            }
+                            </p>
+                        <p>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "Không hạn chế tiền tệ",
+                                        en: "No currency Restrictions"
+                                    },
+                                    language
+                                )
+                            }
+                            </p>
+                        <p>
+                            {
+                                displayMessage(
+                                    {
+                                        vi: "12,5% VAT/thuế kinh doanh nội địa",
+                                        en: "12.5% VAT / domestic business tax"
+                                    },
+                                    language
+                                )
+                            }
+                            </p>
                     </td>
                 </tr>
                 </tbody>
             </table>
 
             <div className="grid grid-cols-4 gap-5 py-10">
-                <div className="space-y-5">
+                <div className="space-y-5 border rounded p-5">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg
                             className="h-full w-full"
@@ -117,107 +609,234 @@ const Benefits = () => {
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
-                        An administrative resource for supporting the Vanuatu Citizenship and Vanuatu Permanent
-                        Residency application processes
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Dễ dàng trong kinh doanh",
+                                    en: "Ease of doing business"
+                                },
+                                language
+                            )
+                        }
                     </p>
                 </div>
-                <div className="space-y-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <svg className='w-full h-full' viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                className="fill-primary"
-                                d="M288 0C146.6 0 32 114.6 32 256s114.6 256 256 256s256-114.6 256-256S429.4 0 288 0zM370.1 289.5C371.6 288.5 373.1 288 374.8 288h12.11c3.148 0 6.055 2 7.387 5l5.328 12.75c.6055 1.5 2.059 2.5 3.633 2.5h3.875c1.695 0 3.27-1.125 3.754-2.875l4.238-14.5C415.6 289.3 417.2 288 419 288h6.055c2.18 0 3.996 1.75 3.996 4v13c0 2.125 .8477 4.125 2.301 5.625l11.87 11.88c3.027 3 4.723 7.125 4.723 11.38v24.5c0 1.793-.4531 3.52-1.021 5.195c-2.395 3.523-5.031 6.867-7.646 10.22l-5.5 5.461C430.8 382.3 426.7 384 422.4 384H407.3c-4.238 0-8.355-1.75-11.26-4.75l-13.08-13c-6.66-6.625-16.23-9.25-25.43-7l-21.19 5.375c-1.332 .25-2.664 .375-3.996 .375h-10.29c-4.238 0-8.355-1.625-11.26-4.625L298.8 348.5c-1.453-1.5-2.301-3.625-2.301-5.75v-10.12c0-3.25 1.938-6.25 5.086-7.5l39.23-15.75c2.059-.75 3.875-1.75 5.691-3L370.1 289.5zM288 48c18.66 0 36.66 2.699 53.88 7.328v.7344c0 9.945-4.623 19.32-12.51 25.38l-29.86 22.93c-5.086 3.375-4.723 11 .8477 13.75l10.78 5.5c5.449 2.625 8.84 8.25 8.84 14.25V216c0 4.375-3.512 8-7.992 8h-3.027c-3.027 0-5.812-1.75-7.145-4.375c-1.574-3.125-5.934-3.375-7.75-.375l-17.44 29C273.7 253 268.5 256 262.9 256H262.6C258.3 256 254.3 257.8 251.3 260.8L245.6 266.4c-3.027 3.125-3.027 8.125 0 11.25l5.691 5.75c3.027 3 4.723 7 4.723 11.25V304c0 8.875-7.145 16-15.98 16H233.9c-6.055 0-11.62-3.375-14.29-8.875L196.9 265.9C194.5 261 187.1 260 184.1 263.9L164.7 283.3C161.7 286.3 157.6 288 153.3 288H82.72C81.1 277.5 80 266.9 80 256C80 141.3 173.3 48 288 48z"
-                            />
-                        </svg>
-
-                    </div>
-                    <p className="text-center text-xs">
-                        A resource for exploring investment opportunities in Vanuatu, and bi-lateral trade
-                    </p>
-                </div>
-                <div className="space-y-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <svg className="w-full h-full" viewBox="0 0 640 512" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                className="fill-primary"
-                                d="M519.2 127.9l-47.6-47.6A56.252 56.252 0 0 0 432 64H205.2c-14.8 0-29.1 5.9-39.6 16.3L118 127.9H0v255.7h64c17.6 0 31.8-14.2 31.9-31.7h9.1l84.6 76.4c30.9 25.1 73.8 25.7 105.6 3.8 12.5 10.8 26 15.9 41.1 15.9 18.2 0 35.3-7.4 48.8-24 22.1 8.7 48.2 2.6 64-16.8l26.2-32.3c5.6-6.9 9.1-14.8 10.9-23h57.9c.1 17.5 14.4 31.7 31.9 31.7h64V127.9H519.2zM48 351.6c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16zm390-6.9l-26.1 32.2c-2.8 3.4-7.8 4-11.3 1.2l-23.9-19.4-30 36.5c-6 7.3-15 4.8-18 2.4l-36.8-31.5-15.6 19.2c-13.9 17.1-39.2 19.7-55.3 6.6l-97.3-88H96V175.8h41.9l61.7-61.6c2-.8 3.7-1.5 5.7-2.3H262l-38.7 35.5c-29.4 26.9-31.1 72.3-4.4 101.3 14.8 16.2 61.2 41.2 101.5 4.4l8.2-7.5 108.2 87.8c3.4 2.8 3.9 7.9 1.2 11.3zm106-40.8h-69.2c-2.3-2.8-4.9-5.4-7.7-7.7l-102.7-83.4 12.5-11.4c6.5-6 7-16.1 1-22.6L367 167.1c-6-6.5-16.1-6.9-22.6-1l-55.2 50.6c-9.5 8.7-25.7 9.4-34.6 0-9.3-9.9-8.5-25.1 1.2-33.9l65.6-60.1c7.4-6.8 17-10.5 27-10.5l83.7-.2c2.1 0 4.1.8 5.5 2.3l61.7 61.6H544v128zm48 47.7c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16c0 8.9-7.2 16-16 16z"
-                            />
-                        </svg>
-
-                    </div>
-                    <p className="text-center text-xs">
-                        An information resource for tourism, property investment and travel related enquiries
-                    </p>
-                </div>
-                <div className="space-y-5">
+                <div className="space-y-5 border rounded p-5">
                     <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <svg
-                            enableBackground="new 0 0 128 128"
-                            version="1.1"
-                            viewBox="0 0 128 128"
-                            xmlSpace="preserve"
-                            xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                            className="h-full w-full"
+                            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"
                         >
-                            <g>
-                                <path
-                                    className="fill-primary"
-                                    d="M64,126c34.2,0,62-27.8,62-62S98.2,2,64,2S2,29.8,2,64S29.8,126,64,126z M16,88.7l25.2-0.2c2.8,10.1,7.5,19.9,13.9,28.7   C38,114.4,23.7,103.5,16,88.7z M47.6,47H79c2.3,11,2.3,22.3,0.2,33.3l-31.6,0.2C45.3,69.4,45.3,58,47.6,47z M63.3,114.9   c-6.3-8.1-10.9-17-13.7-26.4l27.5-0.2C74.2,97.7,69.6,106.7,63.3,114.9z M71.3,117.5c6.6-9,11.3-18.9,14.1-29.3l26.9-0.2   C104.5,103.7,89.3,115,71.3,117.5z M118,64c0,5.6-0.9,11-2.4,16l-28.3,0.2c2-11,1.9-22.2-0.2-33.2h28.1C117,52.3,118,58.1,118,64z    M111.8,39H85.2c-2.9-10-7.5-19.7-13.9-28.5C89,12.9,103.9,23.8,111.8,39z M76.9,39H49.7c2.9-9.2,7.4-17.9,13.6-25.9   C69.5,21.1,74,29.8,76.9,39z M55.1,10.8C48.8,19.5,44.2,29,41.4,39H16.2C23.9,24.3,38.1,13.6,55.1,10.8z M39.5,47   c-2.1,11.1-2.1,22.4-0.1,33.5l-26.7,0.2C10.9,75.4,10,69.8,10,64c0-5.9,1-11.7,2.8-17H39.5z"
-                                />
-                            </g>
+                            <path
+                                className="fill-primary"
+                                d="M129.6 208c5.25 31.25 25.62 57.13 53.25 70.38C175.3 259.4 170.3 235 168.8 208H129.6zM129.6 176h39.13c1.5-27 6.5-51.38 14.12-70.38C155.3 118.9 134.9 144.8 129.6 176zM224 286.8C231.8 279.3 244.8 252.3 247.4 208H200.5C203.3 252.3 216.3 279.3 224 286.8zM265.1 105.6C272.8 124.6 277.8 149 279.3 176h39.13C313.1 144.8 292.8 118.9 265.1 105.6zM384 0H64C28.65 0 0 28.65 0 64v384c0 35.35 28.65 64 64 64h320c35.2 0 64-28.8 64-64V64C448 28.8 419.2 0 384 0zM336 416h-224C103.3 416 96 408.8 96 400S103.3 384 112 384h224c8.75 0 16 7.25 16 16S344.8 416 336 416zM224 320c-70.75 0-128-57.25-128-128s57.25-128 128-128s128 57.25 128 128S294.8 320 224 320zM265.1 278.4c27.62-13.25 48-39.13 53.25-70.38h-39.13C277.8 235 272.8 259.4 265.1 278.4zM200.6 176h46.88C244.7 131.8 231.8 104.8 224 97.25C216.3 104.8 203.2 131.8 200.6 176z"
+                            />
                         </svg>
 
                     </div>
-                    <p className="text-center text-xs">
-                        A link to provide seamless communication between Vanuatu and global key geographical centers
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Miễn thuế",
+                                    en: "Free tax"
+                                },
+                                language
+                            )
+                        }
                     </p>
                 </div>
+                <div className="space-y-5 border rounded p-5">
+                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
+                        <svg
+                            className="h-full w-full"
+                            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="fill-primary"
+                                d="M129.6 208c5.25 31.25 25.62 57.13 53.25 70.38C175.3 259.4 170.3 235 168.8 208H129.6zM129.6 176h39.13c1.5-27 6.5-51.38 14.12-70.38C155.3 118.9 134.9 144.8 129.6 176zM224 286.8C231.8 279.3 244.8 252.3 247.4 208H200.5C203.3 252.3 216.3 279.3 224 286.8zM265.1 105.6C272.8 124.6 277.8 149 279.3 176h39.13C313.1 144.8 292.8 118.9 265.1 105.6zM384 0H64C28.65 0 0 28.65 0 64v384c0 35.35 28.65 64 64 64h320c35.2 0 64-28.8 64-64V64C448 28.8 419.2 0 384 0zM336 416h-224C103.3 416 96 408.8 96 400S103.3 384 112 384h224c8.75 0 16 7.25 16 16S344.8 416 336 416zM224 320c-70.75 0-128-57.25-128-128s57.25-128 128-128s128 57.25 128 128S294.8 320 224 320zM265.1 278.4c27.62-13.25 48-39.13 53.25-70.38h-39.13C277.8 235 272.8 259.4 265.1 278.4zM200.6 176h46.88C244.7 131.8 231.8 104.8 224 97.25C216.3 104.8 203.2 131.8 200.6 176z"
+                            />
+                        </svg>
+
+                    </div>
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Hầu như không có tội phạm",
+                                    en: "Crime free"
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                </div>
+                <div className="space-y-5 border rounded p-5">
+                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
+                        <svg
+                            className="h-full w-full"
+                            viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                className="fill-primary"
+                                d="M129.6 208c5.25 31.25 25.62 57.13 53.25 70.38C175.3 259.4 170.3 235 168.8 208H129.6zM129.6 176h39.13c1.5-27 6.5-51.38 14.12-70.38C155.3 118.9 134.9 144.8 129.6 176zM224 286.8C231.8 279.3 244.8 252.3 247.4 208H200.5C203.3 252.3 216.3 279.3 224 286.8zM265.1 105.6C272.8 124.6 277.8 149 279.3 176h39.13C313.1 144.8 292.8 118.9 265.1 105.6zM384 0H64C28.65 0 0 28.65 0 64v384c0 35.35 28.65 64 64 64h320c35.2 0 64-28.8 64-64V64C448 28.8 419.2 0 384 0zM336 416h-224C103.3 416 96 408.8 96 400S103.3 384 112 384h224c8.75 0 16 7.25 16 16S344.8 416 336 416zM224 320c-70.75 0-128-57.25-128-128s57.25-128 128-128s128 57.25 128 128S294.8 320 224 320zM265.1 278.4c27.62-13.25 48-39.13 53.25-70.38h-39.13C277.8 235 272.8 259.4 265.1 278.4zM200.6 176h46.88C244.7 131.8 231.8 104.8 224 97.25C216.3 104.8 203.2 131.8 200.6 176z"
+                            />
+                        </svg>
+
+                    </div>
+                    <p className="text-center text-sm text-gray-500 font-medium">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Bảo mật",
+                                    en: "Confidentiality"
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                </div>
+
             </div>
             <table className="w-full border">
                 <tbody>
                 <tr className="p-2">
                     <td className="align-top p-2 border text-sm">
-                        Cultural knowledge or tests needed for CBI citizenship?
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Kiến thức văn hóa hoặc bài kiểm tra cần thiết để có quốc tịch CBI?",
+                                    en: "Cultural knowledge or tests needed for CBI citizenship?"
+                                },
+                                language
+                            )
+                        }
                     </td>
                     <td className="align-top p-2 border text-sm">
-                        NO
-                    </td>
-                </tr>
-                <tr className="p-2">
-                    <td className="align-top p-2 border text-sm">
-                        Recognises and accepts dual citizenships?
-                    </td>
-                    <td className="align-top p-2 border text-sm">
-                        YES
-                    </td>
-                </tr>
-                <tr className="p-2">
-                    <td className="align-top p-2 border text-sm">
-                        Global consular support?
-                    </td>
-                    <td className="align-top p-2 border text-sm">
-                        (British) Commonwealth
-                    </td>
-                </tr>
-                <tr className="p-2">
-                    <td className="align-top p-2 border text-sm">
-                        Legal basis of CBI (CIIP / DSP)
-                    </td>
-                    <td className="align-top p-2 border text-sm">
-                        Citizenship Act CAP112
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Không",
+                                    en: "No"
+                                },
+                                language
+                            )
+                        }
                     </td>
                 </tr>
                 <tr className="p-2">
                     <td className="align-top p-2 border text-sm">
-                        Minimum stay to maintain citizenship / residency
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Công nhận và chấp nhận 2 quốc tịch?",
+                                    en: "Recognises and accepts dual citizenships?"
+                                },
+                                language
+                            )
+                        }
+
                     </td>
                     <td className="align-top p-2 border text-sm">
-                        NO
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Có",
+                                    en: "Yes"
+                                },
+                                language
+                            )
+                        }
                     </td>
                 </tr>
                 <tr className="p-2">
                     <td className="align-top p-2 border text-sm">
-                        Approximate population of Vanuatu in 2024
+
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Hỗ trợ lãnh sự toàn cầu",
+                                    en: "Global consular support?"
+                                },
+                                language
+                            )
+                        }
+                    </td>
+                    <td className="align-top p-2 border text-sm">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "(Anh) Khối thịnh vượng chung",
+                                    en: "(British) Commonwealth"
+                                },
+                                language
+                            )
+                        }
+                    </td>
+                </tr>
+                <tr className="p-2">
+                    <td className="align-top p-2 border text-sm">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Kiến thức văn hóa hoặc bài kiểm tra cần thiết để có quốc tịch CBI?",
+                                    en: "Legal basis of CBI (CIIP / DSP)?"
+                                },
+                                language
+                            )
+                        }
+
+                    </td>
+                    <td className="align-top p-2 border text-sm">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Đạo luật công dân CAP112",
+                                    en: "Citizenship Act CAP112"
+                                },
+                                language
+                            )
+                        }
+
+                    </td>
+                </tr>
+                <tr className="p-2">
+                    <td className="align-top p-2 border text-sm">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Thời gian lưu trú tối thiểu để duy trì quyền công dân / nơi cư trú?",
+                                    en: "Minimum stay to maintain citizenship / residency?"
+                                },
+                                language
+                            )
+                        }
+
+                    </td>
+                    <td className="align-top p-2 border text-sm">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Không",
+                                    en: "No"
+                                },
+                                language
+                            )
+                        }
+                    </td>
+                </tr>
+                <tr className="p-2">
+                <td className="align-top p-2 border text-sm">
+                    {
+                        displayMessage(
+                            {
+                                vi: "Dân số gần đúng của Vanuatu vào năm 2024",
+                                en: "Approximate population of Vanuatu in 2024"
+                            },
+                            language
+                        )
+                    }
+
                     </td>
                     <td className="align-top p-2 border text-sm">
                         342,000
@@ -225,7 +844,16 @@ const Benefits = () => {
                 </tr>
                 <tr className="p-2">
                     <td className="align-top p-2 border text-sm">
-                        Languages spoken
+
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Ngôn ngữ nói",
+                                    en: "Languages spoken"
+                                },
+                                language
+                            )
+                        }
                     </td>
                     <td className="align-top p-2 border text-sm">
                         English, Bislama, French
@@ -233,20 +861,40 @@ const Benefits = () => {
                 </tr>
                 <tr className="p-2">
                     <td className="align-top p-2 border text-sm">
-                        Vietnamese population in Vanuatu
+
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Người Việt ở Vanuatu",
+                                    en: "Vietnamese population in Vanuatu"
+                                },
+                                language
+                            )
+                        }
                     </td>
                     <td className="align-top p-2 border text-sm">
-                        500 people
+                        500
                     </td>
                 </tr>
                 <tr className="p-2">
                     <td colSpan={2} className="align-top text-center p-2 border space-x-2 text-sm">
-                        <span>For more interesting facts, please visit:</span>
+                        <span>
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Để biết thêm thông tin thú vị, vui lòng truy cập:",
+                                    en: "For more interesting facts, please visit:"
+                                },
+                                language
+                            )
+                        }
+
+                        </span>
 
                         <a
-                        href="https://www.worldatlas.com/articles/what-are-the-biggest-industries-in-vanuatu.html"
-                        target="_blank"
-                        className="text-decoration-none text-primary font-medium "
+                            href="https://www.worldatlas.com/articles/what-are-the-biggest-industries-in-vanuatu.html"
+                            target="_blank"
+                            className="text-decoration-none text-primary font-medium "
 
                         >
                             What Are The Biggest Industries In Vanuatu?

@@ -56,8 +56,8 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "Country",
-                                        vi: "Quốc gia"
+                                        en: "Stronger Passport Countries",
+                                        vi: "Các quốc gia có hộ chiếu mạnh"
                                     },
                                     language
                                 )
@@ -191,6 +191,175 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
+                                        en: "Spain / Portugal",
+                                        vi: "Tây Ban Nha / Bồ Đào Nha"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€500,000 EUR",
+                                        vi: "€500,000 EUR"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Residency only, not citizenship",
+                                        vi: "Chỉ cư trú, không phải quốc tịch"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                    </tr>
+                    <tr className="border">
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Malta",
+                                        vi: "Malta"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€600,000 EUR",
+                                        vi: "€600,000 EUR"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "AFTER living there for 36 months",
+                                        vi: "SAU khi sống ở đó 36 tháng"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                    </tr>
+                    <tr className="border">
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Turkey",
+                                        vi: "Turkey"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            $400 - 500,000 USD
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "5 months",
+                                        vi: "5 tháng"
+                                    },
+                                    language
+                                )
+                            }
+                            3 years
+                        </td>
+                    </tr>
+                    <tr className="border">
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Spain / Portugal / Malta",
+                                        vi: "Tây Ban Nha / Bồ Đào Nha / Malta"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            €500.000 EUR
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: <p> Residency only, <b>not</b> citizenship</p>,
+                                        vi: <p> Chỉ quyền cư trú, <b>Không phải</b> quyền công dân</p>
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <br/>
+                <table className="w-full border border-collapse">
+                    <thead className="bg-slate-500 text-white text-left ">
+                    <tr className="border">
+                        <th className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Alternate Passport Countries",
+                                        vi: "Các quốc gia có hộ chiếu thay thế"
+                                    },
+                                    language
+                                )
+                            }
+                        </th>
+                        <th className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Official CBI Cost",
+                                        vi: "Giá niêm yết từ CBI"
+                                    },
+                                    language
+                                )
+                            }
+                        </th>
+                        <th className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Time until citizenship granted",
+                                        vi: "Thời gian cho đến khi được cấp quyền công dân"
+                                    },
+                                    language
+                                )
+                            }
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <tr className="border">
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
                                         en: "Cambodia",
                                         vi: "Campuchia"
                                     },
@@ -226,7 +395,7 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "Caribbean Republics",
+                                        en: "Caribbean Republics (doubled since July 2024)",
                                         vi: "Cộng hòa Caribbean (giá tăng gấp đôi vào tháng 7 năm 2024)"
                                     },
                                     language
@@ -289,38 +458,91 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "Spain / Portugal / Malta",
-                                        vi: "Tây Ban Nha / Bồ Đào Nha / Malta"
+                                        en: "Macedonia",
+                                        vi: "Macedonia"
                                     },
                                     language
                                 )
                             }
                         </td>
                         <td className="p-2 border">
-                            €500.000 EUR
+                            €200,000 EUR
                         </td>
                         <td className="p-2 border">
                             {
                                 displayMessage(
                                     {
-                                        en: <p> Residency only, <b>not</b> citizenship</p>,
-                                        vi: <p> Chỉ quyền cư trú, <b>Không phải</b> quyền công dân</p>
+                                        en: "12 months",
+                                        vi: "12 tháng"
                                     },
                                     language
                                 )
                             }
                         </td>
                     </tr>
-
+                    <tr className="border">
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Montenegro",
+                                        vi: "Montenegro"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            €350,000 EUR
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "10 months",
+                                        vi: "10 tháng"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                    </tr>
+                    <tr className="border">
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "Serbia",
+                                        vi: "Serbia"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                        <td className="p-2 border">
+                            €250,000 EUR
+                        </td>
+                        <td className="p-2 border">
+                            {
+                                displayMessage(
+                                    {
+                                        en: "6 months",
+                                        vi: "6 tháng"
+                                    },
+                                    language
+                                )
+                            }
+                        </td>
+                    </tr>
                     </tbody>
                 </table>
                 <br/>
-                <p>
+                <p className="font-medium text-vn-red italic text-center">
                     {
                         displayMessage(
                             {
-                                en: "When applying for the CBI programs of developed countries, your investment capital must come from a clear income source. You must present legitimate business tax receipts over the last 5 years, or your application will not be accepted. Regardless of how much money or assets you have.",
-                                vi: "Khi đăng ký các chương trình CBI của các nước phát triển, vốn đầu tư của bạn phải đến từ nguồn thu nhập rõ ràng. Bạn phải xuất trình biên lai thuế kinh doanh hợp pháp trong 5 năm qua, nếu không đơn đăng ký của bạn sẽ không được chấp nhận. Bất kể bạn có bao nhiêu tiền hay tài sản."
+                                en: "None of these countries have a 0% tax policy. Vanuatu does",
+                                vi: "Không có quốc gia nào trong số này có chính sách thuế 0%. Vanuatu thì có."
                             },
                             language
                         )
@@ -331,14 +553,15 @@ const GlobalCBI = () => {
                     {
                         displayMessage(
                             {
-                                en: "With Vanuatu’s CIIP program, after 5 years your $50,000 shares in the program is redeemable for cash. No other program offers this. Every CBI program rises in price over time and due to popularity. Vanuatu’s CIIP program is currently the cheapest and fastest in the world, but limited to 1000 families.",
-                                vi: "Với chương trình CIIP của Vanuatu, sau 5 năm, số cổ phiếu trị giá 50.000 USD của bạn trong chương trình có thể đổi thành tiền mặt. Không có chương trình khác cung cấp điều này. Mọi chương trình CBI đều tăng giá theo thời gian và do mức độ phổ biến. Chương trình CIIP của Vanuatu hiện rẻ nhất và nhanh nhất trên thế giới nhưng chỉ giới hạn ở 1000 gia đình."
+                                en: "When applying for the CBI programs of developed countries, your investment capital must come from a clear income source. You must present legitimate business tax receipts over the last 5 years, or your application will not be accepted. Regardless of how much money or assets you have. With Vanuatu’s CIIP program, after 5 years your $50,000 shares in the program is redeemable for cash. No other program offers this. Every CBI program rises in price over time and due to popularity. Vanuatu’s CIIP program is currently the cheapest and fastest in the world, but limited to 1000 families.",
+                                vi: "Khi đăng ký các chương trình CBI của các nước phát triển, vốn đầu tư của bạn phải đến từ nguồn thu nhập rõ ràng. Bạn phải xuất trình biên lai thuế kinh doanh hợp pháp trong 5 năm qua, nếu không đơn đăng ký của bạn sẽ không được chấp nhận. Bất kể bạn có bao nhiêu tiền hay tài sản. Với chương trình CIIP của Vanuatu, sau 5 năm, số cổ phiếu trị giá 50.000 USD của bạn trong chương trình có thể đổi thành tiền mặt. Không có chương trình khác cung cấp điều này. Mọi chương trình CBI đều tăng giá theo thời gian và do mức độ phổ biến. Chương trình CIIP của Vanuatu hiện rẻ nhất và nhanh nhất trên thế giới nhưng chỉ giới hạn ở 1000 gia đình."
                             },
                             language
                         )
                     }
                 </p>
             </div>
+
 
         </div>
     );
