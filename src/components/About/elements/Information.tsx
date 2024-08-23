@@ -23,6 +23,15 @@ const Information = () => {
                 </p>
             </div>
 
+            <Image
+                className="block grow h-80 object-cover"
+                width={0}
+                height={0}
+                sizes="100vw"
+                src="/images/vanuatu-citizenship-master-agent.jpg"
+                alt="VIMB-Vanuatu-Citizenship"
+            />
+
             <div className="w-full sm:w-1/2 md:w-80 text-white p-2 m-2 border-transparent border-4">
                 <br/>
                 <p>
@@ -62,14 +71,7 @@ const Information = () => {
                     </p>
             </div>
 
-            <Image
-                className="block w-full md:ml-auto md:w-80 h-80 object-cover"
-                width={0}
-                height={0}
-                sizes="100vw"
-                src="/images/vanuatu-citizenship-master-agent.jpg"
-                alt="VIMB-Vanuatu-Citizenship"
-            />
+
 
         </div>
     );

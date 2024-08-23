@@ -25,17 +25,19 @@ const Main: FC<HTMLAttributes<HTMLDivElement>> = ({className = "p-5 rounded spac
                     {
                         displayMessage(
                             {
-                                vi: (
-                                    <p className="text-sm max-w-72">
+                                en: (
+                                    <p className="text-sm max-w-72 text-center">
                                         The <span className="text-vn-red font-medium">ONLY</span> authorised agent in
                                         Vietnam. Only direct agents of Vanuatu Citizenship Office can process your
                                         application.
                                     </p>
                                 ),
-                                en: (
-                                    <p className="text-sm max-w-72">
-                                        Đại lý được ủy quyền <span className="text-vn-red font-medium">DUY NHẤT</span> tại Việt Nam.
-                                        Chỉ có đại lý trực tiếp của Văn phòng Nhập tịch Vanuatu mới có thể xử lý đơn của bạn.
+                                vi: (
+                                    <p className="text-sm max-w-72 text-center">
+                                        Đại lý được ủy quyền <span
+                                        className="text-vn-red font-medium">DUY NHẤT</span> tại Việt Nam.
+                                        Chỉ có đại lý trực tiếp của Văn phòng Nhập tịch Vanuatu mới có thể xử lý đơn của
+                                        bạn.
                                     </p>
                                 )
                             },
@@ -47,22 +49,29 @@ const Main: FC<HTMLAttributes<HTMLDivElement>> = ({className = "p-5 rounded spac
                     <div className="space-y-2">
                         <Link
                             href="/contact-us"
-                            className="block max-w-48 w-fit text-center bg-vn-red text-white rounded px-4 py-2"
+                            className="block max-w-48 mx-auto w-fit text-center bg-vn-red text-white rounded px-4 py-2"
                         >
                             Contact US
                         </Link>
-                        <p className="max-w-72 text-xs italic">
-                            {
-                                displayMessage(
-                                    {
-                                        vi: "To be assigned an authorised sub-agent in Vietnam for a consultation.",
-                                        en: "Để được chỉ định một đại lý  được ủy quyền tại Việt Nam để tư vấn."
-                                    },
-                                    language
-                                )
-                            }
+                        {
+                            displayMessage(
+                                {
+                                    en: (
+                                        <p className="max-w-72 text-xs italic text-center">
+                                            To be assigned an authorised sub-agent in <br/> Vietnam for a consultation.
+                                        </p>
 
-                        </p>
+                                    ),
+                                    vi: (
+                                        <p className="max-w-72 text-xs italic text-center">
+                                            Để được chỉ định một đại lý được ủy quyền tại <br/> Việt Nam để tư vấn.
+                                        </p>
+                                    )
+                                },
+                                language
+                            )
+                        }
+
                     </div>
                 </div>
                 <div className="space-y-5 flex-none">

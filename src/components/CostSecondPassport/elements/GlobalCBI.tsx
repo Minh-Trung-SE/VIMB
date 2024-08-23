@@ -1,21 +1,24 @@
 import getServerLanguage from "@src/ultils/getServerLanguage";
 import displayMessage from "@src/ultils/language";
+import Image from "next/image";
 
 const GlobalCBI = () => {
     const language = getServerLanguage()
     return (
-        <div className="py-10">
-            <h1 className="px-5 py-2 font-medium text-2xl bg-primary text-white">Global CBI glance</h1>
-            <div>
+        <div className="py-10 space-y-5">
+            <div className="px-5 bg-primary text-white">
+                <h1 className="py-2 font-medium text-2xl bg-primary text-white">Global CBI glance</h1>
                 <br/>
                 {
                     displayMessage(
                         {
                             vi: (
                                 <p>
-                                    Để có được hộ chiếu khác kể từ năm 2024, có rất nhiều chương trình Nhập tịch theo
+                                    Để có được hộ chiếu khác kể từ năm 2024, có rất nhiều chương trình Nhập tịch
+                                    theo
                                     diện đầu tư (CBI).
-                                    <b><i>Như với tất cả các chương trình CBI, chỉ những đại lý được chính phủ ủy quyền
+                                    <b><i>Như với tất cả các chương trình CBI, chỉ những đại lý được chính phủ ủy
+                                        quyền
                                         mới có thể xử lý đơn đăng ký.</i></b>
                                     Đừng mạo hiểm với những người trung gian “rẻ hơn”, những người sẽ cộng thêm các
                                     khoản phí tiếp theo vào giá niêm yết của họ.
@@ -27,7 +30,8 @@ const GlobalCBI = () => {
                                     (CBI) programs available.
                                     <b><i>As with all CBI programs, only government authorised agents can process
                                         applications.</i></b>
-                                    Do not risk “cheaper” intermediaries who will add subsequent fees to their quoted
+                                    Do not risk “cheaper” intermediaries who will add subsequent fees to their
+                                    quoted
                                     prices.
                                 </p>
                             )
@@ -49,6 +53,18 @@ const GlobalCBI = () => {
                 </p>
 
                 <br/>
+            </div>
+            <div className="flex gap-x-5">
+                <div className="w-1/2 sm:block hidden">
+                    <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        alt="hungary"
+                        src="/images/hungary.jpg"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
                 <table className="w-full border border-collapse">
                     <thead className="bg-slate-500 text-white text-left ">
                     <tr className="border">
@@ -314,7 +330,10 @@ const GlobalCBI = () => {
 
                     </tbody>
                 </table>
-                <br/>
+            </div>
+
+            <br/>
+            <div className="flex gap-x-5">
                 <table className="w-full border border-collapse">
                     <thead className="bg-slate-500 text-white text-left ">
                     <tr className="border">
@@ -536,33 +555,41 @@ const GlobalCBI = () => {
                     </tr>
                     </tbody>
                 </table>
-                <br/>
-                <p className="font-medium text-vn-red italic text-center">
-                    {
-                        displayMessage(
-                            {
-                                en: "None of these countries have a 0% tax policy. Vanuatu does",
-                                vi: "Không có quốc gia nào trong số này có chính sách thuế 0%. Vanuatu thì có."
-                            },
-                            language
-                        )
-                    }
-                </p>
-                <br/>
-                <p>
-                    {
-                        displayMessage(
-                            {
-                                en: "When applying for the CBI programs of developed countries, your investment capital must come from a clear income source. You must present legitimate business tax receipts over the last 5 years, or your application will not be accepted. Regardless of how much money or assets you have. With Vanuatu’s CIIP program, after 5 years your $50,000 shares in the program is redeemable for cash. No other program offers this. Every CBI program rises in price over time and due to popularity. Vanuatu’s CIIP program is currently the cheapest and fastest in the world, but limited to 1000 families.",
-                                vi: "Khi đăng ký các chương trình CBI của các nước phát triển, vốn đầu tư của bạn phải đến từ nguồn thu nhập rõ ràng. Bạn phải xuất trình biên lai thuế kinh doanh hợp pháp trong 5 năm qua, nếu không đơn đăng ký của bạn sẽ không được chấp nhận. Bất kể bạn có bao nhiêu tiền hay tài sản. Với chương trình CIIP của Vanuatu, sau 5 năm, số cổ phiếu trị giá 50.000 USD của bạn trong chương trình có thể đổi thành tiền mặt. Không có chương trình khác cung cấp điều này. Mọi chương trình CBI đều tăng giá theo thời gian và do mức độ phổ biến. Chương trình CIIP của Vanuatu hiện rẻ nhất và nhanh nhất trên thế giới nhưng chỉ giới hạn ở 1000 gia đình."
-                            },
-                            language
-                        )
-                    }
-                </p>
+                <div className="w-1/2 sm:block hidden">
+                    <Image
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        alt="hungary"
+                        src="/images/maldives.webp"
+                        className="w-full h-full object-cover"
+                    />
+                </div>
             </div>
-
-
+            <br/>
+            <p className="font-medium text-vn-red italic text-center">
+                {
+                    displayMessage(
+                        {
+                            en: "None of these countries have a 0% tax policy. Vanuatu does",
+                            vi: "Không có quốc gia nào trong số này có chính sách thuế 0%. Vanuatu thì có."
+                        },
+                        language
+                    )
+                }
+            </p>
+            <br/>
+            <p>
+                {
+                    displayMessage(
+                        {
+                            en: "When applying for the CBI programs of developed countries, your investment capital must come from a clear income source. You must present legitimate business tax receipts over the last 5 years, or your application will not be accepted. Regardless of how much money or assets you have. With Vanuatu’s CIIP program, after 5 years your $50,000 shares in the program is redeemable for cash. No other program offers this. Every CBI program rises in price over time and due to popularity. Vanuatu’s CIIP program is currently the cheapest and fastest in the world, but limited to 1000 families.",
+                            vi: "Khi đăng ký các chương trình CBI của các nước phát triển, vốn đầu tư của bạn phải đến từ nguồn thu nhập rõ ràng. Bạn phải xuất trình biên lai thuế kinh doanh hợp pháp trong 5 năm qua, nếu không đơn đăng ký của bạn sẽ không được chấp nhận. Bất kể bạn có bao nhiêu tiền hay tài sản. Với chương trình CIIP của Vanuatu, sau 5 năm, số cổ phiếu trị giá 50.000 USD của bạn trong chương trình có thể đổi thành tiền mặt. Không có chương trình khác cung cấp điều này. Mọi chương trình CBI đều tăng giá theo thời gian và do mức độ phổ biến. Chương trình CIIP của Vanuatu hiện rẻ nhất và nhanh nhất trên thế giới nhưng chỉ giới hạn ở 1000 gia đình."
+                        },
+                        language
+                    )
+                }
+            </p>
         </div>
     );
 };

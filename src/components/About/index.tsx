@@ -5,7 +5,6 @@ import React from 'react';
 import Information from "@src/components/About/elements/Information";
 import ActsAs from "@src/components/About/elements/ActsAs";
 import Supporting from "@src/components/About/elements/Supporting";
-import News from "@src/components/About/elements/News";
 import OurService from "@src/components/About/elements/OurService";
 
 const About = () => {
@@ -25,7 +24,6 @@ const About = () => {
                 <Information/>
                 <ActsAs/>
                 <OurService/>
-                <News/>
             </Container>
         </div>
     );

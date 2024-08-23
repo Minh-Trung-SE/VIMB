@@ -7,8 +7,9 @@ const Bypassing = () => {
     const language = getServerLanguage()
     return (
         <div className="mt-5 space-y-10">
-            <h2 className="px-5 py-2 font-medium text-2xl bg-primary text-white">Bypassing document and interview
-                requests for travel</h2>
+            <h2 className="px-5 py-2 font-medium text-2xl bg-primary text-white">
+                Bypassing document and interview requests for travel
+            </h2>
 
             <div className="flex flex-wrap sm:flex-nowrap gap-5">
                 <Image
@@ -17,7 +18,7 @@ const Bypassing = () => {
                     height={0}
                     className="h-auto w-full sm:h-48 sm:w-fit block"
                     alt="vanuatu-passport"
-                    src="/images/vanuatu-passport.jpg"
+                    src="/images/vanuatu-passport-2021-portrait.jpg"
                 />
                 <div className="grow space-y-2">
                     <p>

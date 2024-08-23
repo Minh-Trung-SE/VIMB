@@ -48,14 +48,14 @@ const OurService = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div className="aspect-square sm:aspect-video relative">
                     <Image
-                        className="z-0 absolute w-full h-full obeject-cover rounded"
+                        className="z-0 absolute w-full h-full object-cover rounded"
                         sizes="100vw"
                         width={0}
                         height={0}
                         src="/images/vimb-vanuatu-citizenship-by-investment.jpg"
                         alt="vimb-vanuatu-citizenship-by-investment"
                     />
-                    <div className="absolute flex flex-col p-5 space-y-2 justify-end h-full w-full bg-primary/20">
+                    <div className="absolute flex flex-col p-5 space-y-2 justify-start h-full w-full bg-primary/20">
                         <h2 className="text-white font-medium">
                             {
                                 displayMessage(
@@ -89,7 +89,7 @@ const OurService = () => {
                         src="/background/VIMB-About-US.jpg"
                         alt="vimb-vanuatu-citizenship-by-investment"
                     />
-                    <div className="absolute flex flex-col p-5 space-y-2 justify-end h-full w-full bg-primary/70">
+                    <div className="absolute flex flex-col p-5 space-y-2 justify-start h-full w-full bg-primary/70">
                         <h2 className="text-white font-medium">
                             {
                                 displayMessage(
@@ -152,7 +152,7 @@ const OurService = () => {
                     </div>
                 </div>
             </div>
-            <div className="h-[600px] sm:h-96 w-full relative rounded">
+            <div className="h-[600px] w-full relative rounded">
                 <Image
                     className="z-0 absolute object-cover w-full h-full rounded"
                     sizes="100vw"
@@ -476,7 +476,7 @@ const OurService = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-primary p-5">
+                    <div className="bg-primary py-10 space-y-2 p-5">
                         <h2 className="text-white text-center font-medium">
                             {
                                 displayMessage(

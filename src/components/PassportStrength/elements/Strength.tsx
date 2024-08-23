@@ -5,9 +5,20 @@ import LANGUAGES from "@src/constants/Language";
 
 const Strength = () => {
     const language = getServerLanguage()
+
     return (
-        <div className="mt-5">
-            <h2 className="px-5 py-2 text-2xl font-medium bg-primary text-white">Passport strength facts</h2>
+        <div className="mt-5 space-y-5">
+            <h2 className="px-5 py-2 text-2xl font-medium bg-primary text-white">
+                {
+                    displayMessage(
+                        {
+                            en: "Passport strength facts",
+                            vi: "Tiêu chuẩn mạnh hộ chiếu"
+                        },
+                        language
+                    )
+                }
+            </h2>
 
             {
                 language === LANGUAGES.VI ? (
