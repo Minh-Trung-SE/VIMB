@@ -9,7 +9,15 @@ const AdditionalServices = () => {
     return (
         <div className="py-10 space-y-5">
             <h1 className="px-5 py-2 font-medium text-2xl bg-primary text-white">
-                Additional Services
+                {
+                    displayMessage(
+                        {
+                            vi: "Dịch vụ thêm (Tính phí)",
+                            en: "Additional Services (Paid)"
+                        },
+                        language
+                    )
+                }
             </h1>
             <p>
                 {
@@ -24,18 +32,16 @@ const AdditionalServices = () => {
 
             </p>
 
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 py-10">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-5 py-5">
                 <div className="space-y-5 border rounded p-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <Image
-                            height={0}
-                            width={0}
-                            alt=""
-                            src="/icons/12.png"
-                            sizes="100vw"
-                            className="h-full w-full"
-                        />
-                    </div>
+                    <Image
+                        height={0}
+                        width={0}
+                        alt=""
+                        src="/icons/12.png"
+                        sizes="100vw"
+                        className="mx-auto size-14"
+                    />
                     <div className="space-y-1">
                         <p className="text-center text-sm text-gray-500 font-medium">
                             {
@@ -62,17 +68,15 @@ const AdditionalServices = () => {
                     </div>
                 </div>
                 <div className="space-y-5 border rounded p-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <Image
-                            height={0}
-                            width={0}
-                            alt=""
-                            src="/icons/12.png"
-                            sizes="100vw"
-                            className="h-full w-full"
-                        />
-                    </div>
-                    <div className="space-y-1">
+                    <Image
+                        height={0}
+                        width={0}
+                        alt=""
+                        src="/icons/14.png"
+                        sizes="100vw"
+                        className="mx-auto size-14"
+                    />
+                     <div className="space-y-1">
                         <p className="text-center text-sm text-gray-500 font-medium">
                             {
                                 displayMessage(
@@ -98,16 +102,14 @@ const AdditionalServices = () => {
                     </div>
                 </div>
                 <div className="space-y-5 border rounded p-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
-                        <Image
-                            height={0}
-                            width={0}
-                            alt=""
-                            src="/icons/12.png"
-                            sizes="100vw"
-                            className="h-full w-full"
-                        />
-                    </div>
+                    <Image
+                        height={0}
+                        width={0}
+                        alt=""
+                        src="/icons/13.png"
+                        sizes="100vw"
+                        className="mx-auto size-14"
+                    />
                     <div className="space-y-1">
                         <p className="text-center text-sm text-gray-500 font-medium">
                             {
@@ -134,16 +136,14 @@ const AdditionalServices = () => {
                     </div>
                 </div>
                 <div className="space-y-5 border rounded p-5">
-                    <div className="mx-auto size-14 p-3 rounded-full border-2 border-primary">
                         <Image
                             height={0}
                             width={0}
                             alt=""
-                            src="/icons/12.png"
+                            src="/icons/15.png"
                             sizes="100vw"
-                            className="h-full w-full"
+                            className="mx-auto size-14"
                         />
-                    </div>
                     <div className="space-y-1">
                         <p className="text-center text-sm text-gray-500 font-medium">
                             {
