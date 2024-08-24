@@ -71,7 +71,7 @@ const Strength = () => {
             }
             <br/>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-2">
-                <div className="space-y-2">
+                <div className="relative">
                     <Image
                         sizes="100vw"
                         height={0}
@@ -80,7 +80,7 @@ const Strength = () => {
                         src="/images/application-denied.jpg"
                         className="aspect-video w-full object-cover"
                     />
-                    <p>
+                    <p className="absolute bottom-0 p-2 bg-primary/80 text-white">
                         {
                             displayMessage(
                                 {
@@ -92,7 +92,7 @@ const Strength = () => {
                         }
                     </p>
                 </div>
-                <div className="space-y-2">
+                <div className="relative">
                     <Image
                         sizes="100vw"
                         height={0}
@@ -101,7 +101,7 @@ const Strength = () => {
                         className="h-auto w-full aspect-video object-cover"
                         alt="passport-grant"
                     />
-                    <p>
+                    <p className="absolute bottom-0 p-2 bg-primary/80 text-white">
                         {
                             displayMessage(
                                 {

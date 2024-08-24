@@ -1,5 +1,6 @@
 import getServerLanguage from "@src/ultils/getServerLanguage";
 import displayMessage from "@src/ultils/language";
+import Image from "next/image";
 import React from 'react';
 
 const FinancialAndCivic = () => {
@@ -32,167 +33,180 @@ const FinancialAndCivic = () => {
                     }
                 </h3>
 
-                <ul className="grid grid-cols-4 gap-2">
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "0% income tax",
-                                        vi: "Thuế thu nhập 0% "
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                <div className="grid gap-5 grid-cols-1 sm:grid-cols-2">
+                    <Image
+                        src="/images/what-financial-benefits-can-be-offered-to-the-employees-scaled.jpg"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        alt="Vanuatu financial benefits"
+                        className="w-full h-full rounded object-cover"
+                    />
+                    <ul className="space-y-2">
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "0% income tax",
+                                            vi: "Thuế thu nhập 0% "
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "0% inheritance tax",
-                                        vi: "Thuế thừa kế 0%"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "0% inheritance tax",
+                                            vi: "Thuế thừa kế 0%"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "0% international business tax",
-                                        vi: "Thuế kinh doanh quốc tế 0%"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "0% international business tax",
+                                            vi: "Thuế kinh doanh quốc tế 0%"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "No CFC Rules",
-                                        vi: "Không có quy tắc CFC"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "No CFC Rules",
+                                            vi: "Không có quy tắc CFC"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "0% capital gains tax",
-                                        vi: "Thuế thu nhập vốn 0%"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "0% capital gains tax",
+                                            vi: "Thuế thu nhập vốn 0%"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "0% gift tax",
-                                        vi: "Thuế tặng cho 0%"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "0% gift tax",
+                                            vi: "Thuế tặng cho 0%"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "0% Crypto ban or tax",
-                                        vi: "Không Cấm hoặc đánh thuế tiền crypto 0%"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "0% Crypto ban or tax",
+                                            vi: "Không Cấm hoặc đánh thuế tiền crypto 0%"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
 
-                    </li>
-                    <li className="flex items-center space-x-2 rounded p-2 border">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                             className="size-5 fill-green-500">
-                            <path fillRule="evenodd"
-                                  d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-                                  clipRule="evenodd"/>
-                        </svg>
-                        <p>
-                            {
-                                displayMessage(
-                                    {
-                                        en: "12.5% local VAT tax",
-                                        vi: "Thuế VAT địa phương 12,5%"
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
-                    </li>
-                </ul>
+                        </li>
+                        <li className="flex items-center space-x-2 rounded p-2 border">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                 className="size-5 fill-green-500">
+                                <path fillRule="evenodd"
+                                      d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.857-9.809a.75.75 0 0 0-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+                                      clipRule="evenodd"/>
+                            </svg>
+                            <p>
+                                {
+                                    displayMessage(
+                                        {
+                                            en: "12.5% local VAT tax",
+                                            vi: "Thuế VAT địa phương 12,5%"
+                                        },
+                                        language
+                                    )
+                                }
+                            </p>
+                        </li>
+                    </ul>
+
+                </div>
+
+
                 <p>
                     {
                         displayMessage(
