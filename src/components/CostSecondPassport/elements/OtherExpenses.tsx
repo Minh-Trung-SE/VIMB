@@ -1,11 +1,12 @@
 import displayMessage from "@src/ultils/language";
 import getServerLanguage from "@src/ultils/getServerLanguage";
+import Image from "next/image";
 
 const OtherExpenses = () => {
     const language = getServerLanguage()
 
     return (
-        <div className="py-10">
+        <div className="py-10 space-y-5">
             <h1 className="px-5 py-2 font-medium text-2xl bg-primary text-white">Other living expenses</h1>
             <div>
                 <p>
@@ -20,10 +21,48 @@ const OtherExpenses = () => {
                     }
                 </p>
                 <div className="py-5 grid grid-cols-3 gap-5">
-                    <p className="p-2 rounded border border-primary text-center">Rent and transportation</p>
-                    <p className="p-2 rounded border border-primary text-center">Food and homesickness</p>
-                    <p className="p-2 rounded border border-primary text-center">Other emotional deprivations</p>
+                    <div className="rounded overflow-hidden border border-primary">
 
+                        <p className="p-2 font-medium text-center">
+                            Rent and transportation
+                        </p>
+                        <Image
+                            src="/images/rent-wooden-blocks-with-magnifying-glass.jpg"
+                            alt="rent-and-transportation"
+                            height={0}
+                            width={0}
+                            className="w-full aspect-square object-cover"
+                            sizes="100vw"
+                        />
+                    </div>
+                    <div className="rounded overflow-hidden border border-primary">
+
+                        <p className="p-2 font-medium text-center">
+                            Food and homesickness
+                        </p>
+                        <Image
+                            src="/images/food.jpg"
+                            alt="rent-and-transportation"
+                            height={0}
+                            width={0}
+                            className="w-full aspect-square object-cover"
+                            sizes="100vw"
+                        />
+                    </div>
+                    <div className="rounded overflow-hidden border border-primary">
+
+                        <p className="p-2 font-medium text-center">
+                            Other emotional deprivations
+                        </p>
+                        <Image
+                            src="/images/emotional-deprivation.jpg"
+                            alt="rent-and-transportation"
+                            height={0}
+                            width={0}
+                            className="w-full aspect-square object-cover"
+                            sizes="100vw"
+                        />
+                    </div>
                 </div>
                 <p>
                     {
