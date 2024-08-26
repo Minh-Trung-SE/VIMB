@@ -6,7 +6,7 @@ import displayMessage from "@src/ultils/language";
 const Introduce = () => {
     const language = getServerLanguage()
     return (
-        <div>
+        <div className="space-y-2">
             <div className="flex flex-wrap-reverse sm:flex-nowrap">
                 <Image
                     className="block w-full sm:w-3/5"
@@ -57,7 +57,7 @@ const Introduce = () => {
             </div>
 
             <div className="flex flex-wrap space-y-5">
-                <div className="w-full sm:w-3/5 sm:py-10  text-lg pr-5">
+                <div className="w-full sm:w-3/5  text-lg pr-5">
                     <p>
                         {
                             displayMessage(
@@ -103,6 +103,56 @@ const Introduce = () => {
                     src="/images/8.jpg"
                     alt="VIMB-Vanuatu-Citizenship"
                 />
+            </div>
+
+            <div className="flex flex-wrap-reverse sm:flex-wrap space-y-5">
+                <Image
+                    className="block w-full sm:w-2/5 object-cover"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    src="/images/volcano.jpg"
+                    alt="VIMB-Vanuatu-Citizenship"
+                />
+                <div className="w-full sm:w-3/5 text-lg sm:pl-5">
+                    <p>
+                        {
+                            displayMessage(
+                                {
+                                    en: "Only agents authorised by the Vanuatu Citizenship Commission can process applications for either the DSP or CIIP programs to obtain Vanuatu citizenship.",
+                                    vi: "Chỉ những đại lý được Ủy ban Nhập tịch Vanuatu ủy quyền mới có thể xử lý đơn xin cấp quốc tịch Vanuatu theo chương trình DSP hoặc CIIP."
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                    <br/>
+                    <p>
+                        {
+                            displayMessage(
+                                {
+                                    en: "If you are dealing with an office to obtain Vanuatu citizenship, please ask to see their credentials and how WHO they are submitting your application through.",
+                                    vi: "Nếu bạn đang làm việc với một văn phòng để xin quốc tịch Vanuatu, vui lòng yêu cầu xem thông tin xác thực của họ và cách họ gửi đơn xin của bạn thông qua AI."
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                    <br/>
+                    <p>
+                        {
+                            displayMessage(
+                                {
+                                    en: "If they have been verified, their business details and authorisation code will be listed on our website.",
+                                    vi: "Nếu họ đã được xác minh, thông tin chi tiết về doanh nghiệp và mã ủy quyền của họ sẽ được liệt kê trên trang web của chúng tôi."
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                </div>
+
+
             </div>
         </div>
     );
