@@ -120,8 +120,8 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "1 million $",
-                                        vi: "1 triệu đô"
+                                        en: "$1 million USD",
+                                        vi: "1 triệu USD"
                                     },
                                     language
                                 )
@@ -273,8 +273,8 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "AFTER living there for 36 months",
-                                        vi: "SAU khi sống ở đó 36 tháng"
+                                        en: "Living there for 36 months",
+                                        vi: "Sống ở đó 36 tháng"
                                     },
                                     language
                                 )
@@ -317,43 +317,6 @@ const GlobalCBI = () => {
                             }
                         </td>
                     </tr>
-                    <tr className="border">
-                        <td className="p-2 border">
-                            {
-                                displayMessage(
-                                    {
-                                        en: "Spain / Portugal / Malta",
-                                        vi: "Tây Ban Nha / Bồ Đào Nha / Malta"
-                                    },
-                                    language
-                                )
-                            }
-                        </td>
-                        <td className="p-2 border">
-                            {
-                                displayMessage(
-                                    {
-                                        en: "€500,000 EUR",
-                                        vi: "€500.000 EUR"
-                                    },
-                                    language
-                                )
-                            }
-
-                        </td>
-                        <td className="p-2 border">
-                            {
-                                displayMessage(
-                                    {
-                                        en: <p> Residency only, <b>not</b> citizenship</p>,
-                                        vi: <p> Chỉ quyền cư trú, <b>Không phải</b> quyền công dân</p>
-                                    },
-                                    language
-                                )
-                            }
-                        </td>
-                    </tr>
-
                     </tbody>
                 </table>
             </div>
@@ -475,8 +438,8 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "Cyprus (stopped June 2024)",
-                                        vi: "Cyprus (ngưng tháng 6 năm 2024)"
+                                        en: "Cyprus: November 2020",
+                                        vi: "Cyprus: Tháng 11 năm 2020"
                                     },
                                     language
                                 )
@@ -519,7 +482,16 @@ const GlobalCBI = () => {
                             }
                         </td>
                         <td className="p-2 border">
-                            €200,000 EUR
+
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€200,000 EUR",
+                                        vi: "€250.000 EUR"
+                                    },
+                                    language
+                                )
+                            }
                         </td>
                         <td className="p-2 border">
                             {
@@ -582,7 +554,15 @@ const GlobalCBI = () => {
                             }
                         </td>
                         <td className="p-2 border">
-                            €250,000 EUR
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€250,000 EUR",
+                                        vi: "€250.000 EUR"
+                                    },
+                                    language
+                                )
+                            }
                         </td>
                         <td className="p-2 border">
                             {
