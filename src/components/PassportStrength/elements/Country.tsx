@@ -44,20 +44,20 @@ const Country: FC<Props> = ({country, language}) => {
 
                 {
                     country.status === "E" ? (
-                        <Badge className="text-px-10 text-white" type="intent" intent="primary">
+                        <Badge className="text-px-10" type="outline" intent="primary">
                             E visa
                         </Badge>
                     ) : country.status === "ON_ARRIVAL" ? (
-                        <Badge className="text-px-10 text-white" type="intent" intent="success">
+                        <Badge className="text-px-10" type="outline" intent="success">
                             Visa on arrival
                         </Badge>
                     ) : country.status === "REQUIRED" ? (
-                        <Badge className="text-px-10 text-white" type="intent" intent="warning">
+                        <Badge className="text-px-10" type="outline" intent="secondary">
                             Visa required
                         </Badge>
                     ) : (
-                        <Badge className="text-px-10" type="outline" intent="primary">
-                            No visa
+                        <Badge className="text-px-10 text-white" type="intent" intent="error">
+                            Not required
                         </Badge>
                     )
                 }

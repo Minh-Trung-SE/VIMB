@@ -117,7 +117,7 @@ const OurService = () => {
                             displayMessage(
                                 {
                                     vi: (
-                                        <ul className="text-white text-xs">
+                                        <ul className="text-white">
                                             <li>• Công ty trong/ngoài nước Vanuatu</li>
                                             <li>• Mở tài khoản ngân hàng</li>
                                             <li>• Cho thuê hoặc đầu tư bất động sản</li>
@@ -130,7 +130,7 @@ const OurService = () => {
                                         </ul>
                                     ),
                                     en: (
-                                        <ul className="text-white text-xs">
+                                        <ul className="text-white">
                                             <li>• Vanuatu On-Shore/Offshore Company</li>
                                             <li>• Bank Account Opening</li>
                                             <li>• Property Rental or Investment</li>

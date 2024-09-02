@@ -146,14 +146,23 @@ const GlobalCBI = () => {
                                 displayMessage(
                                     {
                                         en: "Australia (stopped January 2024)",
-                                        vi: "Úc (ngưng tháng 1 năm 2024)"
+                                        vi: "Australia (ngưng tháng 1 năm 2024)"
                                     },
                                     language
                                 )
                             }
                         </td>
                         <td className="p-2 border">
-                            $2.5 - 5 million AUD
+                            {
+                                displayMessage(
+                                    {
+                                        en: "$2.5 - 5 million AUD",
+                                        vi: "$2.5 - 5 triệu AUD"
+                                    },
+                                    language
+                                )
+                            }
+
                         </td>
                         <td className="p-2 border">
                             {
@@ -297,7 +306,6 @@ const GlobalCBI = () => {
                                     language
                                 )
                             }
-                            3 years
                         </td>
                     </tr>
                     <tr className="border">
@@ -450,7 +458,7 @@ const GlobalCBI = () => {
                                 displayMessage(
                                     {
                                         en: "Cyprus (stopped June 2024)",
-                                        vi: "Síp (ngưng tháng 6 năm 2024)"
+                                        vi: "Cyprus (ngưng tháng 6 năm 2024)"
                                     },
                                     language
                                 )

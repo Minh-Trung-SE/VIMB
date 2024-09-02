@@ -852,7 +852,16 @@ const Benefits = () => {
                         }
                     </td>
                     <td className="align-top p-2 border text-sm">
-                        English, Bislama, French
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Anh, Pháp, Bislama",
+                                    en: "English, Bislama, French"
+                                },
+                                language
+                            )
+                        }
+
                     </td>
                 </tr>
                 <tr className="p-2">

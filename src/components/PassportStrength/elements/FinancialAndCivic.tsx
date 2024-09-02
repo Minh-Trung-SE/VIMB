@@ -20,18 +20,7 @@ const FinancialAndCivic = () => {
                 }
             </h2>
 
-            <div className="space-y-2">
-                <h3 className="font-medium text-lg">
-                    {
-                        displayMessage(
-                            {
-                                en: "Financially benefits:",
-                                vi: "Yêu cầu về tài chính:"
-                            },
-                            language
-                        )
-                    }
-                </h3>
+            <div>
 
                 <div className="grid gap-5 grid-cols-1 sm:grid-cols-2">
                     <Image
@@ -206,8 +195,7 @@ const FinancialAndCivic = () => {
 
                 </div>
 
-
-                <p>
+                <p className="py-4">
                     {
                         displayMessage(
                             {

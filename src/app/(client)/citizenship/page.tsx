@@ -28,7 +28,7 @@ export default function Home() {
                         {
                             displayMessage(
                                 {
-                                    vi: "Quyền lợi của công dân Vanuatu",
+                                    vi: "Quyền lợi khi trở thành công dân Vanuatu",
                                     en: "Vanuatu Citizenship benefits"
                                 },
                                 language
