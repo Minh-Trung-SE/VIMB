@@ -6,7 +6,7 @@ const Bypassing = () => {
 
     const language = getServerLanguage()
     return (
-        <div className="mt-5 space-y-10">
+        <div className="py-20 space-y-10">
             <h2 className="px-5 py-2 font-medium text-2xl bg-primary text-white">
                 Bypassing document and interview requests for travel
             </h2>

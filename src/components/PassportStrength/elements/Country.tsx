@@ -44,11 +44,11 @@ const Country: FC<Props> = ({country, language}) => {
 
                 {
                     country.status === "E" ? (
-                        <Badge className="text-px-10" type="outline" intent="primary">
+                        <Badge className="text-px-10 hover:bg-vn-yellow hover:text-primary" type="outline" intent="success">
                             E visa
                         </Badge>
                     ) : country.status === "ON_ARRIVAL" ? (
-                        <Badge className="text-px-10" type="outline" intent="success">
+                        <Badge className="text-px-10 bg-slate-200" type="outline" intent="primary">
                             Visa on arrival
                         </Badge>
                     ) : country.status === "REQUIRED" ? (
@@ -56,7 +56,7 @@ const Country: FC<Props> = ({country, language}) => {
                             Visa required
                         </Badge>
                     ) : (
-                        <Badge className="text-px-10 text-white" type="intent" intent="error">
+                        <Badge className="text-px-10 text-white" type="intent" intent="success">
                             Not required
                         </Badge>
                     )

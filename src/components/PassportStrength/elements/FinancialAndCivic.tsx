@@ -7,7 +7,7 @@ const FinancialAndCivic = () => {
     const language = getServerLanguage();
 
     return (
-        <div className="py-10 space-y-5">
+        <div className="py-10 space-y-10">
             <h2 className="py-2 px-5 font-medium text-2xl bg-primary text-white">
                 {
                     displayMessage(

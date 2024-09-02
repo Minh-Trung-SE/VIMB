@@ -228,7 +228,7 @@ const GlobalCBI = () => {
                                 displayMessage(
                                     {
                                         en: "€500,000 EUR",
-                                        vi: "€500,000 EUR"
+                                        vi: "€500.000 EUR"
                                     },
                                     language
                                 )
@@ -263,7 +263,7 @@ const GlobalCBI = () => {
                                 displayMessage(
                                     {
                                         en: "€600,000 EUR",
-                                        vi: "€600,000 EUR"
+                                        vi: "€600.000 EUR"
                                     },
                                     language
                                 )
@@ -294,7 +294,16 @@ const GlobalCBI = () => {
                             }
                         </td>
                         <td className="p-2 border">
-                            $400 - 500,000 USD
+                            {
+                                displayMessage(
+                                    {
+                                        en: "$400 - 500,000 USD",
+                                        vi: "$400 - 500.000 USD"
+                                    },
+                                    language
+                                )
+                            }
+
                         </td>
                         <td className="p-2 border">
                             {
@@ -321,7 +330,16 @@ const GlobalCBI = () => {
                             }
                         </td>
                         <td className="p-2 border">
-                            €500.000 EUR
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€500,000 EUR",
+                                        vi: "€500.000 EUR"
+                                    },
+                                    language
+                                )
+                            }
+
                         </td>
                         <td className="p-2 border">
                             {
@@ -399,7 +417,7 @@ const GlobalCBI = () => {
                                 displayMessage(
                                     {
                                         en: "$245,000 USD",
-                                        vi: "$245,000 USD"
+                                        vi: "$245.000 USD"
                                     },
                                     language
                                 )
@@ -433,7 +451,7 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "$200.000 USD",
+                                        en: "$200,000 USD",
                                         vi: "$200.000 USD"
                                     },
                                     language
@@ -465,7 +483,16 @@ const GlobalCBI = () => {
                             }
                         </td>
                         <td className="p-2 border">
-                            €2.000.000 EUR
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€2,000,000 EUR",
+                                        vi: "€2.000.000 EUR"
+                                    },
+                                    language
+                                )
+                            }
+
                         </td>
                         <td className="p-2 border">
                             {
@@ -477,7 +504,6 @@ const GlobalCBI = () => {
                                     language
                                 )
                             }
-                            3 years
                         </td>
                     </tr>
                     <tr className="border">
@@ -520,7 +546,16 @@ const GlobalCBI = () => {
                             }
                         </td>
                         <td className="p-2 border">
-                            €350,000 EUR
+
+                            {
+                                displayMessage(
+                                    {
+                                        en: "€350,000 EUR",
+                                        vi: "€350.000 EUR"
+                                    },
+                                    language
+                                )
+                            }
                         </td>
                         <td className="p-2 border">
                             {

@@ -6,10 +6,18 @@ import displayMessage from "@src/ultils/language";
 const Introduce = () => {
     const language = getServerLanguage()
     return (
-        <div className="space-y-2">
-            <div className="flex flex-wrap-reverse sm:flex-wrap space-y-5">
+        <div className="space-y-5">
+            <div className="grid sm:grid-cols-2 gap-5">
 
-                <div className="w-full sm:w-3/5 text-lg sm:pl-5">
+                <div className="w-full text-lg">
+                    <Image
+                        className="block w-8/12 mx-auto"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        src="/logo/original.png"
+                        alt="VIMB Viet Nam"
+                    />
                     <p>
                         {
                             displayMessage(
@@ -47,7 +55,7 @@ const Introduce = () => {
                     </p>
                 </div>
                 <Image
-                    className="block w-full sm:w-2/5 object-cover"
+                    className="block w-full object-cover"
                     width={0}
                     height={0}
                     sizes="100vw"
@@ -67,41 +75,31 @@ const Introduce = () => {
                     alt="VIMB-Vanuatu-Citizenship"
                 />
 
-                <div className="grow overflow-hidden flex flex-col space-y-5">
-                    <Image
-                        className="block w-full"
-                        width={0}
-                        height={0}
-                        sizes="100vw"
-                        src="/logo/original.png"
-                        alt="VIMB Viet Nam"
-                    />
-                    <div className="grow p-5 text-lg bg-primary">
-                        <p className="text-white">
-                            {
-                                displayMessage(
-                                    {
-                                        vi: "VIMB kể từ năm 2017 đã là một trong những công ty dịch vụ chuyên nghiệp hoạt động quốc tế nổi bật nhất của Vanuatu. Có trụ sở chính tại Vanuatu, VIMB hoạt động tại Port Vila, Singapore, Dubai, London và bây giờ là Việt Nam.",
-                                        en: "VIMB has since 2017 been one of Vanuatu’s most prominent internationally operating professional services companies. Headquartered in Vanuatu, VIMB operates in Port Vila, Singapore, Dubai, London and now Vietnam."
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
-                        <br/>
-                        <p className="text-white">
-                            {
-                                displayMessage(
-                                    {
-                                        vi: "Văn phòng Quốc tịch Vanuatu đã chỉ định VIMB làm đại lý cho chương trình Quốc tịch theo diện Đầu tư (CBI) của Vanuatu. Hiện chúng tôi đã mở rộng sang châu Á để đảm bảo nguồn vốn đầu tư nước ngoài thông qua chương trình CBI.",
-                                        en: "The Vanuatu Citizenship Office has designated VIMB as their agent for Vanuatu’s Citizenship By Investment (CBI) program. We have now expanded to Asia to secure foreign investment funding via its CBI program."
-                                    },
-                                    language
-                                )
-                            }
-                        </p>
-                    </div>
 
+                <div className="grow flex flex-col p-5 items-center justify-center text-lg bg-primary">
+                    <p className="text-white">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "VIMB kể từ năm 2017 đã là một trong những công ty dịch vụ chuyên nghiệp hoạt động quốc tế nổi bật nhất của Vanuatu. Có trụ sở chính tại Vanuatu, VIMB hoạt động tại Port Vila, Singapore, Dubai, London và bây giờ là Việt Nam.",
+                                    en: "VIMB has since 2017 been one of Vanuatu’s most prominent internationally operating professional services companies. Headquartered in Vanuatu, VIMB operates in Port Vila, Singapore, Dubai, London and now Vietnam."
+                                },
+                                language
+                            )
+                        }
+                    </p>
+                    <br/>
+                    <p className="text-white">
+                        {
+                            displayMessage(
+                                {
+                                    vi: "Văn phòng Quốc tịch Vanuatu đã chỉ định VIMB làm đại lý cho chương trình Quốc tịch theo diện Đầu tư (CBI) của Vanuatu. Hiện chúng tôi đã mở rộng sang châu Á để đảm bảo nguồn vốn đầu tư nước ngoài thông qua chương trình CBI.",
+                                    en: "The Vanuatu Citizenship Office has designated VIMB as their agent for Vanuatu’s Citizenship By Investment (CBI) program. We have now expanded to Asia to secure foreign investment funding via its CBI program."
+                                },
+                                language
+                            )
+                        }
+                    </p>
                 </div>
 
             </div>
