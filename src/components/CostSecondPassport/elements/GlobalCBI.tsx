@@ -61,7 +61,7 @@ const GlobalCBI = () => {
                         height={0}
                         sizes="100vw"
                         alt="hungary"
-                        src="/images/hungary.jpg"
+                        src="/images/hungarian-parliament.jpg"
                         className="w-full h-full object-cover"
                     />
                 </div>
@@ -273,8 +273,8 @@ const GlobalCBI = () => {
                             {
                                 displayMessage(
                                     {
-                                        en: "Living there for 36 months",
-                                        vi: "Sống ở đó 36 tháng"
+                                        en: <p><b>AFTER</b> living there for 36 months</p> ,
+                                        vi: <p><b>SAU</b> khi sống ở đó 36 tháng</p>
                                     },
                                     language
                                 )
