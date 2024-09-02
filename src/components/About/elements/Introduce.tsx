@@ -104,8 +104,8 @@ const Introduce = () => {
 
             </div>
 
-            <div className="flex flex-wrap space-y-5">
-                <div className="w-full sm:w-3/5  text-lg pr-5">
+            <div className="grid grid-cols-5 gap-5">
+                <div className="flex flex-col items-center justify-center col-span-5 sm:col-span-3 text-lg">
                     <p>
                         {
                             displayMessage(
@@ -142,15 +142,20 @@ const Introduce = () => {
                         }
                     </p>
                 </div>
+                <div
+                    className="block col-span-5 sm:col-span-2 object-cover"
+                >
+                    <Image
+                        className="block w-full object-cover"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        src="/images/8.jpg"
+                        alt="VIMB-Vanuatu-Citizenship"
+                    />
 
-                <Image
-                    className="block w-full sm:w-2/5 object-cover"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    src="/images/8.jpg"
-                    alt="VIMB-Vanuatu-Citizenship"
-                />
+                </div>
+
             </div>
 
 
