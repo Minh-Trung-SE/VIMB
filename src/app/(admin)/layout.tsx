@@ -1,6 +1,9 @@
+import Logo from "@src/components/Header/elements/Logo";
+import Sidebar from "@src/components/Sidebar";
+import type {Metadata} from "next";
+import Link from "next/link";
 import {ReactNode} from "react";
 import "@src/app/globals.css";
-import type {Metadata} from "next";
 
 export const metadata: Metadata = {
     title: "VIMB ADMIN",
@@ -15,6 +18,18 @@ export const metadata: Metadata = {
     }
 }
 
+const Header = () => {
+    return (
+        <header className="border-b flex justify-between items-center px-5 py-2">
+            <Logo/>
+            <Link replace={true} className="block w-fit text-red-500 font-medium" href="/">
+                Logout
+            </Link>
+        </header>
+    )
+}
+
+
 export default function RootLayout(
     {
         children,
@@ -22,9 +37,21 @@ export default function RootLayout(
         children: ReactNode
     }
 ) {
+    // if (isEmpty(cookies().get("username"))) {
+    //     redirect("/login")
+    // }
+
     return (
         <html lang="en">
-        <body>{children}</body>
+        <body>
+        <Header/>
+        <div className="flex">
+            <Sidebar className="flex-none"/>
+            <div className="grow">
+                {children}
+            </div>
+        </div>
+        </body>
         </html>
     )
 }

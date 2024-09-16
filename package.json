@@ -23,8 +23,11 @@
         "axios": "^1.7.2",
         "class-variance-authority": "^0.7.0",
         "joi": "^17.13.1",
+        "jsdom": "^25.0.0",
         "lodash": "^4.17.21",
         "next": "14.2.3",
+        "nodemailer": "^6.9.15",
+        "quill": "^2.0.2",
         "rc-pagination": "^4.1.0",
         "react": "^18",
         "react-dom": "^18",
@@ -35,8 +38,10 @@
         "tailwind-merge": "^2.3.0"
     },
     "devDependencies": {
+        "@types/jsdom": "^21.1.7",
         "@types/lodash": "^4.17.4",
         "@types/node": "^20",
+        "@types/nodemailer": "^6.4.15",
         "@types/react": "^18",
         "@types/react-dom": "^18",
         "@types/sequelize": "^4.28.20",

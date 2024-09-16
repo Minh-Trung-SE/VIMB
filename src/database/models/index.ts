@@ -2,33 +2,32 @@ import ConsultationRequest, {
     ConsultationRequestAttributes,
     ConsultationRequestCreationAttributes
 } from "@src/database/models/ConsultationRequest/Model";
-import Member, {MemberAttributes, MemberCreationAttributes} from "@src/database/models/Member/Model";
+import Blog, {BlogAttributes, BlogCreationAttributes} from "@src/database/models/Blog/Model";
 import Account, {AccountAttributes, AccountCreationAttributes} from "@src/database/models/Account/Model";
 
-(
-    async () => {
-        const models = [
-            ConsultationRequest,
-            Member,
-            Account
-        ]
-        for (const model of models) {
-            await model.sync({force: false})
-        }
+const syncModel = async () => {
+    const models = [
+        ConsultationRequest,
+        Blog,
+        Account
+    ]
+    for (const model of models) {
+        await model.sync({force: false})
     }
-)()
+}
 
 export {
-    Member,
+    Blog,
     Account,
     ConsultationRequest,
+    syncModel
 }
 
 export type {
     ConsultationRequestAttributes,
     ConsultationRequestCreationAttributes,
-    MemberAttributes,
-    MemberCreationAttributes,
+    BlogAttributes,
+    BlogCreationAttributes,
     AccountAttributes,
     AccountCreationAttributes
 }

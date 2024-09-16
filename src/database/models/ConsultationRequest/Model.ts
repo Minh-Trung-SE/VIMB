@@ -60,7 +60,7 @@ ConsultationRequest.init(
         status: {
             type: DataTypes.STRING,
             allowNull: false,
-            defaultValue: 'PENDING'
+            defaultValue: 'UNREAD',
         },
         meta: {
             type: DataTypes.JSON,

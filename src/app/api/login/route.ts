@@ -1,8 +1,7 @@
 import {NextResponse} from "next/server";
-import {Member} from "@src/database/models";
 import {cookies} from "next/headers";
 
-export async function POST(request: Request, response: Response) {
+export async function POST(request: Request) {
     const {username, password} = await request.json()
     // const account = await Account.findOne(
     //     {
@@ -55,9 +54,9 @@ export async function POST(request: Request, response: Response) {
     )
 }
 
-export async function GET(request: Request, response: Response) {
-
-    return NextResponse.json(
-        await Member.findAll()
-    )
-}
+// export async function GET(request: Request, response: Response) {
+//
+//     return NextResponse.json(
+//         await Member.findAll()
+//     )
+// }
